@@ -4,8 +4,11 @@
 -Прежде чем, предступить к выполнению задач и работы над проектом, стоит установать данные приложения:
 --
 -1. [Unity](https://unity.com/ru/download)
+
 -2. [GitHub Desktop](https://desktop.github.com/)
+
 -3. [GitHub Bash](https://git-scm.com/downloads)
+
 -4. [Visual Studio 2019](https://visualstudio.microsoft.com/ru/vs/older-downloads/), при желании можно использовать менее востребовательное приложение [Visual Code](https://code.visualstudio.com/)
 
 -После установки данных приложений, вам необходимо зарегестрироваться на [GitHub](https://github.com/), после чего перейти в [Trello](https://trello.com/invite/b/QjrtO1ia/ATTIc1befbc924f5addceeac4602f0c163748BFAD32A/zhammer) и присоединиться к проекту.
