@@ -1,4 +1,15 @@
-# Trello
+# Instruction
+-Инструкция. Данная статья была создана и написана, для лучшего, быстрого и качественного понимания базовых принципов разработки приложений на Unity 2d, с использованием таких организационых приложений, как: Trello, GitHub, GitHub Desktop, GitHub Bash, Unity 2D, Visual Studio 2019.
+
+-Прежде чем, предступить к выполнению задач и работы над проектом, стоит установать данные приложения:
+--
+-1. Unity(https://unity.com/ru/download)
+-2. GitHub Desktop(https://desktop.github.com/)
+-3. GitHub Bash(https://git-scm.com/downloads)
+-4. Visual Studio 2019(https://visualstudio.microsoft.com/ru/vs/older-downloads/), при желании можно использовать менее востребовательное приложение Visual Code(https://code.visualstudio.com/)
+
+-После установки данных приложений, вам необходимо зарегестрироваться на данном сайте(https://github.com/), после чего перейти в Trello(https://trello.com/invite/b/QjrtO1ia/ATTIc1befbc924f5addceeac4602f0c163748BFAD32A/zhammer) и присоединиться к проекту.
+## Trello
 
 **Trello** – это популярный инструмент для управления задачами и проектами, который может быть полезен для организации разработки программного обеспечения (ПО). Вот оценка Trello и несколько альтернативных инструментов:
 
