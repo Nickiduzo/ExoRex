@@ -20,6 +20,6 @@ The main hero is about to embark on a dangerous adventure to the planet "E-92," 
 ## Instruction
 Для качественной и быстрой работы над проектом, следует ознакомится с инструкцией.
 ## Personal
-**Vellansole** - main developer and creator of progect.
+  **Vellansole** - main developer and creator of progect.
 
-**Kamush** - main data manager and helper
+  **Kamush** - main data manager and helper
