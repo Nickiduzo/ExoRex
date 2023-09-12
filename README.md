@@ -18,5 +18,8 @@ The main hero is about to embark on a dangerous adventure to the planet "E-92," 
 Главному герою предстоит отправиться в опасное приключение на планету "E-92", разобраться с жителями этой планеты, найти компромисс или уничтожить их, а также узнать, что произошло с его командой.
 
 ## Instruction
+Для качественной и быстрой работы над проектом, следует ознакомится с инструкцией.
+## Personal
+**Vellansole** - main developer and creator of progect.
 
-## Trello
+**Kamush** - main data manager and helper
