@@ -19,7 +19,7 @@ The main hero is about to embark on a dangerous adventure to the planet "E-92," 
 
 ## Instruction
 Для качественной и быстрой работы над проектом, следует ознакомится с инструкцией.
-[Trello](https://github.com/Nickiduzo/ZHmamer/blob/main/Trello.md)
+[Instruction](https://github.com/Nickiduzo/ZHmamer/blob/main/Trello.md)
 ## Personal
   **Vellansole** - main developer and creator of progect.
 
