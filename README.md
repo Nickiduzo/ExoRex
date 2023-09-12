@@ -1,26 +1,33 @@
-# **ZHmamer**
+# ZHammer
 
-### ENG
-  A game in which the main player will have to fight against the evil that has risen in a foreign planet. 
-The main hero, "Hammer," set off for this planet in pursuit of his colleague from the "Zeloo" company. Moreover, the main hero was created by this very company. 
-Thanks to advanced data-robot technologies, valuable minerals such as titanium, iridium, lithium, and cesium were discovered on the planet "E-92." 
-However, during the first shipment of equipment for mining these minerals, problems arose with the local biological lifeforms, causing the ore-robot division to disappear without a trace.
+[**English**](#english-description) | [**Українська**](#українська-опис) | [**Русский**](#русское-описание)
 
-The main hero is about to embark on a dangerous adventure to the planet "E-92," deal with the planet's inhabitants, find a compromise or eliminate them, and uncover the mystery of what happened to his team.
+---
 
-### RUS
-  Игра, в которой главному игроку предстоит сражаться против зла, вознесшего бунт на чужой планете. 
-Главный герой, "Hammer", отправился на эту планету следом за своим сотрудником из компании "Zeloo". 
-К тому же, сам главный герой был создан этой компанией. 
-Благодаря передовым технологиям дата-роботы обнаружили на планете "Е-92" множество ценных ископаемых, таких как титан, иридий, литий и цезий. 
-Однако при первой поставке оборудования для добычи этих ископаемых возникли проблемы с местными биологическими формами жизни, в результате чего дивизион рудо-роботов исчез без вести.
+## Ввод
+* Дата первого релиза: 28 декабря 2022 года.
+* Проект был запланирован и изначально создан разработчиком "vellansole", но находится в стадии активной разработки.
 
-Главному герою предстоит отправиться в опасное приключение на планету "E-92", разобраться с жителями этой планеты, найти компромисс или уничтожить их, а также узнать, что произошло с его командой.
+## English Description
+Welcome to **ZHammer** – an exciting game where the main player, a robot from another planet, fights against evil creatures that have risen against him on an alien planet. The main hero, "Hammer," follows his colleague from the "Zeloo" company, which also created him. Due to advanced technologies, data robots have found numerous valuable minerals on the "E-92" planet, such as titanium, iridium, lithium, and cesium. However, during the initial equipment delivery for mining, problems arose with local biological entities, leading to the disappearance of the ore robot division. The main hero embarks on a dangerous adventure to planet "E-92," where he must either eliminate or find a compromise with the planet's inhabitants and discover what happened to his team.
 
-## Instruction
-Для качественной и быстрой работы над проектом, следует ознакомится с инструкцией.
-[Instruction](https://github.com/Nickiduzo/ZHmamer/blob/main/Instruction.md)
-## Personal
-  **Vellansole** - main developer and creator of progect.
+## Українська Опис
+Ласкаво просимо в **ZHammer** - захоплюючу гру, в якій головному гравцю, роботу з іншої планети, доведеться боротися проти злих створінь, які повстали проти нього на іншій планеті. Головний герой, "Hammer," слідує за своїм колегою з компанії "Zeloo", яка також створила його. Завдяки передовим технологіям, роботи-дані знайшли численні корисні мінерали на планеті "E-92", такі як титан, іридій, літій та цезій. Проте під час початкової поставки обладнання для видобутку, виникли проблеми з місцевими біологічними об'єктами, що призвело до зникнення відділу рудних роботів. Головному герою належить вирушити на небезпечну пригоду на планету "E-92", де він повинен або усунути загрозу, або знайти компроміс з мешканцями планети і дізнатися, що сталося з його командою.
 
-  **Kamush** - main data manager and helper
+## Русское Описание
+Добро пожаловать в **ZHammer** - увлекательную игру, в которой главному игроку, роботу с другой планеты, предстоит сражаться против злобных существ, которые восстали против него на чужой планете. Главный герой, "Hammer," следует за своим коллегой из компании "Zeloo", которая также создала его. Благодаря передовым технологиям, роботы-данные нашли множество ценных минералов на планете "E-92", таких как титан, иридий, литий и цезий. Однако во время первой поставки оборудования для добычи минералов возникли проблемы с местными биологическими объектами, что привело к исчезновению подразделения рудороботов. Главному герою предстоит отправиться в опасное приключение на планету "E-92", где ему предстоит устранить угрозу или найти компромисс с обитателями планеты и выяснить, что произошло с его командой.
+
+---
+
+## Важные Темы
+* [Unity](#unity)
+* [GitHub/GitHub Desktop](#github-github-desktop)
+* [Trello](#trello)
+* [Поиск Звуков](#поиск-звуков)
+* [Проверка Заданий](#проверка-заданий)
+* [Использование Времени](#использование-времени)
+* [Новые Идеи](#новые-идеи)
+* [Решение Багов](#решение-багов)
+* [Проверка на Авторское Право](#проверка-на-авторское-право)
+* [Сокращения](#сокращения)
+* [Команда Разработчиков](#команда-разработчиков)
