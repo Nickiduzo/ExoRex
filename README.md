@@ -22,7 +22,7 @@ Welcome to **ZHammer** – an exciting game where the main player, a robot from 
 ## Важные Темы
 * [Unity](https://github.com/Nickiduzo/ZHmamer/blob/main/Insctruction/Unity.md)
 * [GitHub/GitHub Desktop](#github-github-desktop)
-* [Trello](#trello)
+* [Trello](https://github.com/Nickiduzo/ZHmamer/blob/main/Insctruction/Trello.md)
 * [Поиск Звуков](#поиск-звуков)
 * [Проверка Заданий](#проверка-заданий)
 * [Использование Времени](#использование-времени)
