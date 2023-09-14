@@ -38,27 +38,27 @@ GitHub может быть полезным инструментом для уп
 * Склонируйте репозиторий к себе на ПК:
 
 1. Откройте **ExoRex** в [**GitHub**](https://github.com/Nickiduzo/ExoRex) и скопируйте ссылку:
-![Link](#IImages/link.png)
+![Link](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/link.png)
 2. Откройте стрелку в интерфейсе слева:
 ![Arrow](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/arrow.png)
 3. Выберите пункт клонировать репозиторий:
-![Clone](#IImages/clone.png)
+![Clone](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/clone.png)
 4. Вводим ссылку которую скопировали ранее:
-![Link](#IImages/paste.link.png)
+![Link](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/paste.link.png)
 5. Перейдите в ветку, название которой совпадает с вашем именем либо название которой вам предоставил *ТЛ*:
-![Branch](##IImages/pick.png)
+![Branch](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/pick.png)
 
 После установки, необходимо удостовериться что вся установка произошла успешно и вы имеете право на внесение измений в проект.
 
 Для этого необходимо сделать:
 1. Откройте папку с вашим проектом:
-![Openfolder](#IImages/project.png)
+![Openfolder](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/project.png)
 2. Откройте GitBash в папке с проектом, используя ПКМ:
-![Bash](#IImages/bash.png)
+![Bash](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/bash.png)
 3. Вводим команду *git branch* для того, что бы узнать собственную ветку:
-![Bran](#IImages/branch.png)
+![Bran](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/branch.png)
 4. Вводим команду *git config* для того, что бы узнать собственный никнейм:
-![User](#IImages/user.png)
+![User](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/user.png)
 
 На этом первоначальную настройку приложений *Git* завершено.
 
@@ -68,13 +68,13 @@ GitHub может быть полезным инструментом для уп
 Прежде чем начинать работать над проектом необходимо проверить собственную ветку на актуальность.
 
 * Откройте приложение *GitHub Desktop* и выберите пункт "Current branch":
-![Current](#IImages/pick.png)
+![Current](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/pick.png)
 * Нажмите на кнопку снизу "Choose a branch to merge.."
-![Merge](#IImages/merge.png)
+![Merge](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/merge.png)
 * Важно делать *merge* в свою ветку из *main* ветки.
-![Master](#IImages/master.png)
+![Master](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/master.png)
 
 * Если долгое время не делать *merge* в свою ветку с *main* ветки могут возникнуть проблемы и через приложение **GitHub Desktop** *merge* может не сработать.
 
 В таких случаях необходимо сделать *merge* с помощью *GitBash*, используя комманду *git merge main*:
-![GitBashMerge](#IImages/gitmergemaster.png)
+![GitBashMerge](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/gitmergemaster.png)
