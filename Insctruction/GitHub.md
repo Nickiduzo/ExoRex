@@ -38,7 +38,7 @@ GitHub может быть полезным инструментом для уп
 
 1. Откройте **ExoRex** в [**GitHub**](https://github.com/Nickiduzo/ExoRex) и скопируйте ссылку:
 
-   ![Link](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/link.png)
+   ![Link](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/newlink.png)
 
 2. Откройте стрелку в интерфейсе слева:
 
