@@ -1,22 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow2D : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject followObject;
-    [SerializeField]
-    private float offSet;
-    [SerializeField]
-    private float offSetSmoothing;
-    private Vector3 playerPosition;
+    [SerializeField] private GameObject followObject;
+    [SerializeField] private float offSet;
+    [SerializeField] private float offSetSmoothing;
 
     [SerializeField] private float upperLimit;
     [SerializeField] private float bottomLimit;
     [SerializeField] private float rightLimit;
     [SerializeField] private float leftLimit;
 
+    private Vector3 playerPosition;
     private void Update()
     {
         playerPosition = new Vector3(followObject.transform.position.x,transform.position.y, transform.position.z);

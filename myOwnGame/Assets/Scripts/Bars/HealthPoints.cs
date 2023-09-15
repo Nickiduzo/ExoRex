@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthPoints : MonoBehaviour
@@ -7,11 +5,11 @@ public class HealthPoints : MonoBehaviour
     public delegate void HealthHandler(float percent);
     public event HealthHandler OnHealthChange;
 
-    public Death death;
-
     [SerializeField] private int currentHealth;
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int minHealth = 0;
+
+    public Death death;
     private void Start()
     {
         currentHealth = maxHealth;
