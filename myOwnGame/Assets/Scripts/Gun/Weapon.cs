@@ -1,19 +1,15 @@
-using System;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField]
-    private Animator anim;
-    [SerializeField]
-    private Transform shotPos;
-    [SerializeField]
-    private GameObject shot;
-
-    private float timerToShot;
+    [SerializeField] private Animator anim;
+    [SerializeField] private Transform shotPos;
+    [SerializeField] private GameObject shot;
 
     public string wheaponShootSound = "Shot";
-    AudioManager audioManager;
+
+    private float timerToShot;
+    private AudioManager audioManager;
     public void Start()
     {
         timerToShot = 0.5f;
