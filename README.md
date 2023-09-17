@@ -53,7 +53,6 @@ Prepare to soar higher than the stars and brace yourself for a captivating journ
 * [Авторское Право](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B0%D0%B2%D0%BE.md)
 * [Баги](Insctruction/Баги.md)
 * [Ввод](https://github.com/Nickiduzo/ZHmamer/blob/main/Insctruction/%D0%92%D0%B2%D0%BE%D0%B4.md)
-* [Время](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/%D0%92%D1%80%D0%B5%D0%BC%D1%8F.md)
 * [Идеи](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/%D0%98%D0%B4%D0%B5%D0%B8.md)
 * [Команда](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0.md)
 * [Проверка Заданий](https://github.com/Nickiduzo/ZHmamer/blob/main/Insctruction/%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B9.md)
