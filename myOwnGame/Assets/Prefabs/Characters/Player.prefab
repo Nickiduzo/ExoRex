@@ -382,7 +382,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -4235937299929528, guid: c169746775487c644ae73e5504f7caee, type: 3}
+  m_Sprite: {fileID: -2823347866880555059, guid: af4cf14edc15cf84cb8bbf60a0f53e1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -488,12 +488,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919554892a17a2f48b9323d6e758a7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movingAudio: MoveLeg
   hp: 150
   maxSpeed: 13
   isRightSide: 1
   shotPos: {fileID: 5158957556544297749}
   gameOver: {fileID: 0}
-  movingAudio: MoveLeg
 --- !u!114 &3869996865686801345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,8 +555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47bd1c615838c84b9dd01d062574be2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 150
   slider: {fileID: 3471238994560947034}
+  currentHealth: 150
 --- !u!1 &3869996866100311549
 GameObject:
   m_ObjectHideFlags: 0
