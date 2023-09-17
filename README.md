@@ -8,7 +8,7 @@
 * Дата первого релиза: 28 декабря 2022 года.
 * Проект был запланирован и изначально создан разработчиком "vellansole", но находится в стадии активной разработки.
 
-English Description
+### English Description
 Welcome to ExoRex - an exhilarating adventure where you step into the shoes of a mining robot, exploring a recently discovered planet to unravel the mysteries of its extraordinary nature.
 
 Zelloo, a pioneer in the field of mining robots, has been diligently extracting valuable minerals not only in the open cosmos but also on enigmatic planets unearthed during our incredible cosmic odyssey.
@@ -21,7 +21,7 @@ What awaits this lone robot on this enigmatic planet? What unprecedented life fo
 
 Prepare to soar higher than the stars and brace yourself for a captivating journey into the world of ExoRex!
 
-Українська Опис
+### Українська Опис
 Ласкаво просимо в ExoRex - захоплюючу пригоду, де ви потрапите в шкуру робота-добувача, який вирушив на недавно досліджену планету, щоб розкрити таємниці її неймовірної природи.
 
 Zelloo, лідер у галузі роботів-добувачів, завдяки нашим сміливим космічним подорожам, завжди ретельно видобував корисні мінерали як у відкритому космосі, так і на таємничих планетах, які ми відкривали під час нашої неймовірної космічної подорожі.
@@ -34,7 +34,7 @@ Zelloo, лідер у галузі роботів-добувачів, завдя
 
 Приготуйтесь піднятися вище за зірки та готуйтесь до захоплюючої подорожі у світі ExoRex!
 
-Русское Описание
+### Русское Описание
 Добро пожаловать в ExoRex - захватывающее приключение, в котором вам предстоит вжиться в роль робота-добытчика, отправившегося на недавно изведанную планету, чтобы раскрыть тайны её удивительной природы.
 
 Zelloo, мировой лидер в производстве роботов-добытчиков, занимается извлечением полезных ископаемых как в открытом космосе, так и на загадочных планетах, которые открываются в течение нашего невероятного космического путешествия.
