@@ -8,14 +8,44 @@
 * Дата первого релиза: 28 декабря 2022 года.
 * Проект был запланирован и изначально создан разработчиком "vellansole", но находится в стадии активной разработки.
 
-## English Description
-Welcome to **ZHammer** – an exciting game where the main player, a robot from another planet, fights against evil creatures that have risen against him on an alien planet. The main hero, "Hammer," follows his colleague from the "Zeloo" company, which also created him. Due to advanced technologies, data robots have found numerous valuable minerals on the "E-92" planet, such as titanium, iridium, lithium, and cesium. However, during the initial equipment delivery for mining, problems arose with local biological entities, leading to the disappearance of the ore robot division. The main hero embarks on a dangerous adventure to planet "E-92," where he must either eliminate or find a compromise with the planet's inhabitants and discover what happened to his team.
+English Description
+Welcome to ExoRex - an exhilarating adventure where you step into the shoes of a mining robot, exploring a recently discovered planet to unravel the mysteries of its extraordinary nature.
 
-## Українська Опис
-Ласкаво просимо в **ZHammer** - захоплюючу гру, в якій головному гравцю, роботу з іншої планети, доведеться боротися проти злих створінь, які повстали проти нього на іншій планеті. Головний герой, "Hammer," слідує за своїм колегою з компанії "Zeloo", яка також створила його. Завдяки передовим технологіям, роботи-дані знайшли численні корисні мінерали на планеті "E-92", такі як титан, іридій, літій та цезій. Проте під час початкової поставки обладнання для видобутку, виникли проблеми з місцевими біологічними об'єктами, що призвело до зникнення відділу рудних роботів. Головному герою належить вирушити на небезпечну пригоду на планету "E-92", де він повинен або усунути загрозу, або знайти компроміс з мешканцями планети і дізнатися, що сталося з його командою.
+Zelloo, a pioneer in the field of mining robots, has been diligently extracting valuable minerals not only in the open cosmos but also on enigmatic planets unearthed during our incredible cosmic odyssey.
 
-## Русское Описание
-Добро пожаловать в **ZHammer** - увлекательную игру, в которой главному игроку, роботу с другой планеты, предстоит сражаться против злобных существ, которые восстали против него на чужой планете. Главный герой, "Hammer," следует за своим коллегой из компании "Zeloo", которая также создала его. Благодаря передовым технологиям, роботы-данные нашли множество ценных минералов на планете "E-92", таких как титан, иридий, литий и цезий. Однако во время первой поставки оборудования для добычи минералов возникли проблемы с местными биологическими объектами, что привело к исчезновению подразделения рудороботов. Главному герою предстоит отправиться в опасное приключение на планету "E-92", где ему предстоит устранить угрозу или найти компромисс с обитателями планеты и выяснить, что произошло с его командой.
+However, two weeks ago, after dispatching a team of robot explorers to the planet "Rex-88," we lost all contact with the command center. In response, we've decided to send a new group of mining robots to manually search for resources and manage them remotely. Their mission is to investigate the enigmatic planet and extract precious resources as they progress.
+
+Despite intermittent communication loss with the command center, one robot has managed to survive. But how long can it endure until the arrival of a rescue team or a confrontational response from an assault squad?
+
+What awaits this lone robot on this enigmatic planet? What unprecedented life forms will it encounter? Will it be able to meet them face to face?
+
+Prepare to soar higher than the stars and brace yourself for a captivating journey into the world of ExoRex!
+
+Українська Опис
+Ласкаво просимо в ExoRex - захоплюючу пригоду, де ви потрапите в шкуру робота-добувача, який вирушив на недавно досліджену планету, щоб розкрити таємниці її неймовірної природи.
+
+Zelloo, лідер у галузі роботів-добувачів, завдяки нашим сміливим космічним подорожам, завжди ретельно видобував корисні мінерали як у відкритому космосі, так і на таємничих планетах, які ми відкривали під час нашої неймовірної космічної подорожі.
+
+Але два тижні тому, після відправки експедиції роботів-дослідників на планету "Rex-88", ми втратили зв'язок з командним центром. У відповідь на це, ми вирішили вислати нову групу роботів-добувачів для ручного пошуку ресурсів та віддаленого управління ними. їхня місія - досліджувати загадкову планету та видобувати цінні ресурси по мірі просування.
+
+Незважаючи на періодичні втрати зв'язку з командним центром, одному роботу вдалося вижити. Але як довго він зможе витримати до приходу рятувальної команди або конфронтаційної реакції штурмового загону?
+
+Чого чекає цього самотнього робота на цій загадковій планеті? Які невидані форми життя він зустріне? Чи зможе він зустрітися з ними лицем до лиця?
+
+Приготуйтесь піднятися вище за зірки та готуйтесь до захоплюючої подорожі у світі ExoRex!
+
+Русское Описание
+Добро пожаловать в ExoRex - захватывающее приключение, в котором вам предстоит вжиться в роль робота-добытчика, отправившегося на недавно изведанную планету, чтобы раскрыть тайны её удивительной природы.
+
+Zelloo, мировой лидер в производстве роботов-добытчиков, занимается извлечением полезных ископаемых как в открытом космосе, так и на загадочных планетах, которые открываются в течение нашего невероятного космического путешествия.
+
+Однако две недели назад, после отправки экспедиции роботов-исследователей на планету "Rex-88", связь с командным центром была потеряна. В свете этого события, решено было отправить новую группу роботов-добытчиков для ручного поиска ресурсов и дистанционного управления ими. Их миссия - изучать загадочную планету и извлекать ценные ресурсы по мере исследования.
+
+И хотя связь с командным центром вновь и вновь исчезает, одному роботу удается остаться в живых. Но как долго он сможет выживать, пока не прибудет спасательная группа или не настигнет штурмовой отряд?
+
+Что ждет одинокого робота на этой загадочной планете? Какие невиданные формы жизни он обнаружит? Сможет ли он встретить их лицом к лицу?
+
+Поднимайтесь выше, чем звезды, и готовьтесь к захватывающему путешествию в мире ExoRex!
 
 ---
 
