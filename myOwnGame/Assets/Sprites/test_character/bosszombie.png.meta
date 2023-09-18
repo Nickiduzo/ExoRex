@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2515487c01f4d384e9cf9a854a3fb7af
+guid: f07d8933962b9ed44bd7926f6a0758e9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,213 +123,179 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: new_0
+      name: bosszombie_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 15
-        width: 24
-        height: 21
+        x: 7
+        y: 0
+        width: 16
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 8.409594, y: 10.5}
-        - {x: -11.5, y: 10.5}
-        - {x: -12, y: 5.5}
-        - {x: -12, y: 1.5}
-        - {x: -11.5, y: -4.5832405}
-        - {x: -8.5, y: -6.5}
-        - {x: -5.5, y: -7.5}
-        - {x: -3.5, y: -8.5}
-        - {x: 3, y: -8.5}
-        - {x: 3, y: -9.5}
-        - {x: 5, y: -9.5}
-        - {x: 5, y: -10.5}
-        - {x: 6, y: -10.5}
-        - {x: 6, y: -9.5}
-        - {x: 8, y: -9.5}
-        - {x: 8, y: -8.5}
-        - {x: 9, y: -8.5}
-        - {x: 9, y: -7.5}
-        - {x: 10, y: -7.5}
-        - {x: 10, y: -6.5}
-        - {x: 11, y: -6.5}
-        - {x: 11, y: -4.5}
-        - {x: 12, y: -4.5}
-        - {x: 12, y: 4.5}
-        - {x: 11, y: 7.5}
-        - {x: 9, y: 9.5}
-      - - {x: 10, y: -7.5}
-        - {x: 10, y: -7.5}
-        - {x: 10, y: -7.5}
-        - {x: 10, y: -7.5}
+      - - {x: 6.0175285, y: 17.5}
+        - {x: -6, y: 17.5}
+        - {x: -6, y: 16.5}
+        - {x: -8, y: 16.5}
+        - {x: -8, y: -8.5}
+        - {x: -7, y: -8.5}
+        - {x: -7, y: -11.5}
+        - {x: -8, y: -11.5}
+        - {x: -8, y: -17.5}
+        - {x: 6, y: -17.5}
+        - {x: 6, y: -2.5}
+        - {x: 7, y: -2.5}
+        - {x: 7, y: -0.5}
+        - {x: 6, y: -0.5}
+        - {x: 6, y: 5.5}
+        - {x: 7, y: 5.5}
+        - {x: 7, y: 8.5}
+        - {x: 8, y: 8.5}
+        - {x: 8, y: 13.5}
+        - {x: 7, y: 13.5}
+        - {x: 7, y: 16.5}
+        - {x: 6, y: 16.5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afd40d7782abee14896ec13885fc880e
-      internalID: -1902584934
+      spriteID: 7d7b8a0cc411a644191d9e2678962c91
+      internalID: -1539923099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new_1
+      name: bosszombie_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 23
-        width: 15
-        height: 15
+        x: 51
+        y: 12
+        width: 11
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 7.5, y: -7.5}
-        - {x: 7.5, y: -3.5}
-        - {x: -0.5, y: 7.5}
-        - {x: -7.5, y: 7.5}
-        - {x: -7.5, y: -7.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74b3bc0d2039ef047ac12f5d45a658c6
-      internalID: -1277850194
+      spriteID: f73ac3fd25e761f4a944dde2c4987428
+      internalID: -411065849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new_2
+      name: bosszombie_2
       rect:
         serializedVersion: 2
-        x: 40
-        y: 21
-        width: 17
-        height: 15
+        x: 63
+        y: 6
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8.5, y: 7.5}
-        - {x: -8.5, y: 0.5}
-        - {x: -1.5, y: -7.5}
-        - {x: 8.5, y: -7.5}
-        - {x: 8.5, y: 1.5}
-        - {x: 1.5, y: 7.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20714bbbab729064ca792b35ca4b5060
-      internalID: -919846992
+      spriteID: 516048c444524f749b382a3824b42bfb
+      internalID: -2010910070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new_3
+      name: bosszombie_3
       rect:
         serializedVersion: 2
-        x: 35
+        x: 23
         y: 3
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 13
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -6.5, y: 9.5}
-        - {x: -14.5, y: 9.5}
-        - {x: -14.5, y: 5.5}
-        - {x: -12.5, y: 5.5}
-        - {x: -12.5, y: 4.5}
-        - {x: -11.5, y: 3.5}
-        - {x: -9.5, y: 2.5}
-        - {x: -8.5, y: 1.5}
-        - {x: -7.5, y: 0.5}
-        - {x: 1.5, y: -9.5}
-        - {x: 13.5, y: -9.5}
-        - {x: 14.5, y: -8.5}
-        - {x: 14.5, y: 2.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84664ff2dd535bc448e4aaafa879179d
-      internalID: 1351894395
+      spriteID: 8f05fa80fbe42d94d991c894d4e51b81
+      internalID: 1547083235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new_4
+      name: bosszombie_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3
+        width: 13
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3d07b902bb58745b4fea03a42197be
+      internalID: -1028563844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosszombie_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 28
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 6}
+        - {x: -14, y: -2}
+        - {x: -8, y: -6}
+        - {x: 11, y: -6}
+        - {x: 14, y: -3}
+        - {x: 14, y: 0}
+        - {x: -9, y: 5}
+        - {x: -10, y: 5}
+        - {x: -10, y: 6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d03434663672054397295436c7311de
+      internalID: 1794108362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bosszombie_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -2.5, y: 6}
-        - {x: -2.5, y: 7}
-        - {x: -3.5, y: 7}
-        - {x: -3.4766955, y: 8}
-        - {x: -8.5, y: 8}
-        - {x: -8.5, y: -8}
-        - {x: 8.5, y: -8}
-        - {x: 8.5, y: 6}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5c0b197a3332594c8477318a5372ce8
-      internalID: -309780114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: new_5
-      rect:
-        serializedVersion: 2
-        x: 24
         y: 7
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 7
+        height: 33
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -0.5097256, y: 7.5}
-        - {x: -8.5, y: 7.5}
-        - {x: -8.499998, y: 6.47357}
-        - {x: -7.5, y: 6.5}
-        - {x: -7.5, y: 4.5}
-        - {x: -6.5, y: 4.5}
-        - {x: -6.5, y: 2.5}
-        - {x: -5.5, y: 2.5}
-        - {x: -5.5, y: 0.5}
-        - {x: -5.5, y: -4.5}
-        - {x: -5.5, y: -7.5}
-        - {x: 8.5, y: -7.5}
-        - {x: 8.5, y: -4.5}
-        - {x: 7.5, y: -4.5}
-        - {x: 7.5, y: -3.5}
-        - {x: 5.5, y: -3.5}
-        - {x: 5.5, y: -2.5}
-        - {x: 3.5, y: -2.5}
-        - {x: 3.5, y: -1.5}
-        - {x: 2.5, y: -1.5}
-        - {x: 2.5, y: -0.5}
-        - {x: 0.5, y: -0.5}
-        - {x: 0.5, y: 0.5}
-        - {x: -0.5, y: 0.5}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e320aeafea33b884e985f276ddcebb11
-      internalID: 884270371
+      spriteID: 823b451e84663b449abacfaa08940e6e
+      internalID: 342773717
       vertices: []
       indices: 
       edges: []
@@ -345,12 +311,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      new_0: -1902584934
-      new_1: -1277850194
-      new_2: -919846992
-      new_3: 1351894395
-      new_4: -309780114
-      new_5: 884270371
+      bosszombie_0: -1539923099
+      bosszombie_1: -411065849
+      bosszombie_2: -2010910070
+      bosszombie_3: -1133301627
+      bosszombie_4: 1547083235
+      bosszombie_5: -1028563844
+      bosszombie_6: 1794108362
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
