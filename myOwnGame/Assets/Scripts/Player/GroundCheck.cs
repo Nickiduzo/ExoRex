@@ -14,18 +14,17 @@ public class GroundCheck : MonoBehaviour
     }
 
     [SerializeField] private Transform validationTransform;
+    [SerializeField] private float validationRadius = 1.0f;
     [SerializeField] private LayerMask ignoreLayer;
 
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (Physics2D.Raycast(validationTransform.position, new Vector2(0f, -0.05f), 0.05f, ~ignoreLayer))
-        {
-            IsGrounded = true;
-        }
-        else
-        {
-            IsGrounded = false;
-        }
+        IsGrounded =  !(Physics2D.OverlapCircle(validationTransform.position, validationRadius, ~ignoreLayer) is null);
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(validationTransform.position, validationRadius);
     }
 }
