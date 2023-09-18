@@ -63,3 +63,23 @@ Prepare to soar higher than the stars and brace yourself for a captivating journ
 * [GitHub](https://github.com/Nickiduzo/ZHmamer/blob/main/Insctruction/GitHub.md)
 * [Unity](https://github.com/Nickiduzo/ZHmamer/blob/main/Insctruction/Unity.md)
 * [Trello](https://github.com/Nickiduzo/ZHmamer/blob/main/Insctruction/Trello.md)
+
+---
+
+# ExoRex
+
+![Скриншот игры](screenshot.png)
+
+Описание вашей увлекательной 2D игры на Unity, которая объединяет элементы шутера, платформера и атмосферу с зомби-монстрами. Вам предстоит исследовать мрачный мир, добывать ископаемые, улучшать персонажа и раскрывать захватывающую историю.
+
+## Теги
+- 2D Game
+- Shooter
+- Platformer
+- Zombies
+- Resources
+- Upgrades
+- Animations
+- Story
+
+[Ссылка на скачивание игры](ссылка)
