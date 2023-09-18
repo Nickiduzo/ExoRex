@@ -16,9 +16,12 @@ public class MovingPlayer : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        audioManager = AudioManager.instance;
-
         hp = SetHealth();
+    }
+
+    private void Start()
+    {
+        audioManager = AudioManager.instance;
     }
 
     public void TakeDamage(int damage)
