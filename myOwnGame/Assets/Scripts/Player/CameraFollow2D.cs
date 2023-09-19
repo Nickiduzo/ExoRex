@@ -4,15 +4,18 @@ public class CameraFollow2D : MonoBehaviour
 {
     [SerializeField] private GameObject followObject;
     [SerializeField] private float offSet;
-    [SerializeField] private float offSetSmoothing;
 
     [SerializeField] private float upperLimit;
     [SerializeField] private float bottomLimit;
     [SerializeField] private float rightLimit;
     [SerializeField] private float leftLimit;
 
+
+    [SerializeField] private float smoothTime = 0.3f;
+    private Vector3 velocity = Vector3.zero;
+
     private Vector3 playerPosition;
-    private void Update()
+    private void FixedUpdate()
     {
         playerPosition = new Vector3(followObject.transform.position.x,transform.position.y, transform.position.z);
 
@@ -25,14 +28,7 @@ public class CameraFollow2D : MonoBehaviour
             playerPosition = new Vector3(playerPosition.x - offSet, playerPosition.y, playerPosition.z);
         }
 
-        transform.position = Vector3.Lerp(transform.position, playerPosition, offSetSmoothing * Time.deltaTime);
-
-        transform.position = new Vector3
-            (
-            Mathf.Clamp(transform.position.x, leftLimit, rightLimit),
-            Mathf.Clamp(transform.position.y, bottomLimit, upperLimit),
-            transform.position.z
-            );
+        transform.position = Vector3.SmoothDamp(transform.position, playerPosition, ref velocity, smoothTime);
     }
     private void OnDrawGizmos()
     {

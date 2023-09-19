@@ -5,40 +5,23 @@ public class MovingPlayer : MonoBehaviour
     public string movingAudio = "MoveLeg";
     
     [HideInInspector] public int hp;
-    [SerializeField] private float maxSpeed = 10f;
     [SerializeField] private bool isRightSide = true;
     [SerializeField] private Transform shotPos;
     [SerializeField] private GameOverScreen gameOver;
-    
+
+
     private Animator anim;
     private AudioManager audioManager;
 
-    private void Start()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
-        audioManager = AudioManager.instance;
-
         hp = SetHealth();
     }
-    private void Update()
-    {
-        float move = Input.GetAxis("Horizontal");
-        Rigidbody2D rigidBody = GetComponent<Rigidbody2D>();
-        rigidBody.MovePosition(rigidBody.position + Vector2.right * move * maxSpeed * Time.deltaTime);
 
-        if((move > 0f && !isRightSide) || (move < 0f && isRightSide))
-        {
-            if (move != 0f)
-            {
-                Spin();
-            }
-        }
-    }
-
-    private void Spin()
+    private void Start()
     {
-        isRightSide = !isRightSide;
-        transform.Rotate(0f, 180f, 0f);
+        audioManager = AudioManager.instance;
     }
 
     public void TakeDamage(int damage)
