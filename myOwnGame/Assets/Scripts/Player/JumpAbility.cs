@@ -11,6 +11,7 @@ public class JumpAbility : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     private Rigidbody2D rb;
     private GroundCheck groundCheck;
+    private int currentJumpCount = 0;
 
     private void Awake()
     {
@@ -41,6 +42,17 @@ public class JumpAbility : MonoBehaviour
             MakeJumpSound();
             anime.SetBool("Ground", false);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            currentJumpCount = 1;
+        }
+        else
+        {
+            if (currentJumpCount < 2)
+            {
+                MakeJumpSound();
+                anime.SetBool("Ground", false);
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                currentJumpCount++;
+            }
         }
     }
 }
