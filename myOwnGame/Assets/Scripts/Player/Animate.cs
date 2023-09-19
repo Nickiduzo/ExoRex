@@ -17,7 +17,7 @@ public class Animate : MonoBehaviour
         else if (Input.GetKey(KeyCode.A)) animator.SetBool("isMoving", true);
         else
         {
-            animator.SetBool("isStay", true);
+            //animator.SetBool("isStay", true);
             animator.SetBool("isMoving", false);
         }
     }
