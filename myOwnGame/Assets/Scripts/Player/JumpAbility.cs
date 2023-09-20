@@ -8,7 +8,7 @@ public class JumpAbility : MonoBehaviour
     private AudioManager audioManager;
 
     [SerializeField] private Animator anime;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpForce = 7f;
     private Rigidbody2D rb;
     private GroundCheck groundCheck;
     private int currentJumpCount = 0;
@@ -26,7 +26,6 @@ public class JumpAbility : MonoBehaviour
     private void FixedUpdate()
     {
         anime.SetBool("Ground", groundCheck.IsGrounded);
-        anime.SetFloat("vSpeed", rb.velocity.y);
     }
 
     public void MakeJumpSound()
@@ -39,20 +38,22 @@ public class JumpAbility : MonoBehaviour
         
         if (groundCheck.IsGrounded)
         {
-            MakeJumpSound();
-            anime.SetBool("Ground", false);
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            ExecuteJumpFunctionality();
             currentJumpCount = 1;
         }
         else
         {
             if (currentJumpCount < 2)
             {
-                MakeJumpSound();
-                anime.SetBool("Ground", false);
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                ExecuteJumpFunctionality();
                 currentJumpCount++;
             }
         }
+    }
+    private void ExecuteJumpFunctionality()
+    {
+        MakeJumpSound();
+        anime.SetBool("Ground", false);
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
 }
