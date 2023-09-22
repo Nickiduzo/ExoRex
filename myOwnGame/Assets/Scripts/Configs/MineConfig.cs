@@ -2,7 +2,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "MineLevel", menuName = "Configs/MineLevel")]
-public class MineConfig : MonoBehaviour
+public class MineConfig : ScriptableObject
 {
 
     // Have to add and complicate general Player Script

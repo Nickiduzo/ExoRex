@@ -1046,7 +1046,7 @@ GameObject:
   - component: {fileID: 6430646764212414412}
   - component: {fileID: 1671579899851755941}
   m_Layer: 0
-  m_Name: User Panel
+  m_Name: User Panels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1065,9 +1065,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4172444830518262551}
-  - {fileID: 8992920202145767115}
-  - {fileID: 4102757596168118654}
   - {fileID: 4542431811834152677}
+  - {fileID: 4102757596168118654}
+  - {fileID: 8992920202145767115}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1087,12 +1087,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 800dbaca9468fec44a037298d92fe785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userPanels:
-  - {fileID: 2897892571810342973}
-  - {fileID: 677913923519848726}
-  - {fileID: 7680827177324287824}
-  - {fileID: 1541274952449582008}
-  interfaceNames: []
+  panelObjects: []
+  panelNames: []
 --- !u!1 &4039713580289041434
 GameObject:
   m_ObjectHideFlags: 0
