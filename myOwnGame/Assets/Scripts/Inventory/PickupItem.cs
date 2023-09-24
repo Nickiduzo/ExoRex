@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class PickupItem : MonoBehaviour
 {
-    public ItemData data;
+    public PickupItemObject Item;
+    [SerializeField] private int amount = 1;
     
     public void Pickup()
     {
-        Inventory.Instance.Add(data);
+        InventorySystem.Instance.Add(Item, amount);
         Destroy(gameObject);
     }
 }

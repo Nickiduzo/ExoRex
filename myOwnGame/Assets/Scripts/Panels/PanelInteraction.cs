@@ -3,32 +3,32 @@ using UnityEngine;
 
 public class PanelInteraction : MonoBehaviour
 {
+    [SerializeField] private GameObject hidableArea;
+    [SerializeField] private GameObject parentPanel;
     [SerializeField] private List<GameObject> panelObjects;
     [SerializeField] private List<string> panelNames;
 
     private void Awake()
     {
         gameObject.SetActive(true);
-        foreach(Transform child in gameObject.transform)
+        hidableArea.SetActive(false);
+        foreach (Transform child in parentPanel.transform)
         {
             panelObjects.Add(child.gameObject);
             panelNames.Add(child.name);
         }
     }
-
     public void ShowPanel(int panelIndex)
     {
+        hidableArea.SetActive(true);
         foreach (var panel in panelObjects)
         {
             panel.SetActive(panel.name == panelNames[panelIndex]);
         }
     }
-    public void HideAllPanels()
+    public void HideAll()
     {
-        foreach (var panel in panelObjects)
-        {
-            panel.SetActive(false);
-        }
+        hidableArea.SetActive(false);
     }
 
     public void InventoryButton()
