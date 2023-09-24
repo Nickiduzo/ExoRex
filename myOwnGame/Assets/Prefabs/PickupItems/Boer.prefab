@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -3782254463906239336}
   - component: {fileID: 184499403499796282}
   m_Layer: 0
-  m_Name: Buer
+  m_Name: Boer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3439563170e7c94aa739288fb2c9e47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: f281390f0e4c0b045b9ba73f82f03f32, type: 2}
+  Item: {fileID: 11400000, guid: 22c57d5c6f3d26b4399154eb45bc934f, type: 2}
 --- !u!1 &6470663570846413340
 GameObject:
   m_ObjectHideFlags: 0

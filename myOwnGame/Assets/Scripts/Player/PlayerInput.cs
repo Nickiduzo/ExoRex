@@ -32,7 +32,7 @@ public class PlayerInput : MonoBehaviour
                     panelInteraction.ShowPanel(3);
                     break;
                 case KeyCode.Escape:
-                    panelInteraction.HideAllPanels();
+                    panelInteraction.HideAll();
                     break;
             }
         }
