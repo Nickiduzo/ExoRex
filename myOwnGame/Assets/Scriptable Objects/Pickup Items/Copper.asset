@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Copper Ore
   Icon: {fileID: 8170959208353945544, guid: c50b9e64f6228324fbac97a96947418c, type: 3}
-  Model: {fileID: 0}
-  Description: 
+  Model: {fileID: 5973725710976770887, guid: aee6b512b173bc24bab09dafbb4ff8e1, type: 3}
+  Description: Copper ores are natural mineral formations containing copper in such
+    compounds and concentrations at which their industrial use is technically possible
+    and economically feasible.
   OreType: 1
