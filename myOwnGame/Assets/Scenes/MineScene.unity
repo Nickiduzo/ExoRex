@@ -11805,6 +11805,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 513660704126656559, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 677913923519848726, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541274952449582008, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2897892571810342973, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
@@ -11816,6 +11824,10 @@ PrefabInstance:
       value: User Panel System
       objectReference: {fileID: 0}
     - target: {fileID: 3878537701756230600, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168855097161338021, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -11903,7 +11915,20 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -47.51349
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7680827177324287824, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7795770522355185459, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592786099744357629, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
+      propertyPath: m_Name
+      value: Description Panel
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 318177846494137645, guid: 5f13560f6c6855041a454e567102cfa0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14629,7 +14654,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1915294657587055905, guid: ab86cfa68104cd54ba611c0b8bc6038e, type: 3}
       propertyPath: m_Name
-      value: Boer
+      value: Drill
       objectReference: {fileID: 0}
     - target: {fileID: 1979787350986513900, guid: ab86cfa68104cd54ba611c0b8bc6038e, type: 3}
       propertyPath: m_BodyType

@@ -3,13 +3,19 @@ using UnityEngine;
 
 public class PanelInteraction : MonoBehaviour
 {
+    public static PanelInteraction Instance;
+    [SerializeField] private DescriptionPanel descriptionPanel;
     [SerializeField] private GameObject hidableArea;
     [SerializeField] private GameObject parentPanel;
     [SerializeField] private List<GameObject> panelObjects;
     [SerializeField] private List<string> panelNames;
 
+    public DescriptionPanel DescriptionPanel => descriptionPanel;
+
     private void Awake()
     {
+        Instance = this;
+        descriptionPanel = GetComponentInChildren<DescriptionPanel>();
         gameObject.SetActive(true);
         hidableArea.SetActive(false);
         foreach (Transform child in parentPanel.transform)

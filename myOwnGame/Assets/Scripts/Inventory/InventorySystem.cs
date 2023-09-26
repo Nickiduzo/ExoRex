@@ -30,8 +30,8 @@ public class InventorySystem : MonoBehaviour
                     Transform temp = inventoryContent.GetChild(j);
                     if(temp.name == item.Name)
                     {
-                        TextMeshProUGUI text = temp.GetComponentInChildren<TextMeshProUGUI>();
-                        text.text = inventoryObject.Container[i].Amount.ToString();
+                        InventoryItem inventoryItem = temp.GetComponent<InventoryItem>();
+                        inventoryItem.SetAmount(inventoryObject.Container[i].Amount);
                         isUIItemFound = true;
                         break;
                     }
@@ -40,11 +40,11 @@ public class InventorySystem : MonoBehaviour
                 {
                     GameObject addedItem = Instantiate(inventoryItemPrefab, inventoryContent);
                     addedItem.name = item.Name;
-                    Image image = addedItem.GetComponentInChildren<Image>();
-                    image.sprite = item.Icon;
-                    image.preserveAspect = true;
-                    TextMeshProUGUI text = addedItem.GetComponentInChildren<TextMeshProUGUI>();
-                    text.text = inventoryObject.Container[i].Amount.ToString();
+                    InventoryItem inventoryItem = addedItem.GetComponent<InventoryItem>();
+                    inventoryItem.Initialize();
+                    inventoryItem.SetItemObject(item);
+                    inventoryItem.UpdateItemIcon();
+                    inventoryItem.SetAmount(inventoryObject.Container[i].Amount);
                 }
 
                 hasItem = true;
@@ -57,11 +57,11 @@ public class InventorySystem : MonoBehaviour
             inventoryObject.Container.Add(new InventorySlot(item, amount));
             GameObject addedItem = Instantiate(inventoryItemPrefab, inventoryContent);
             addedItem.name = item.Name;
-            Image image = addedItem.GetComponentInChildren<Image>();
-            image.sprite = item.Icon;
-            image.preserveAspect = true;
-            TextMeshProUGUI text = addedItem.GetComponentInChildren<TextMeshProUGUI>();
-            text.text = amount.ToString();
+            InventoryItem inventoryItem = addedItem.GetComponent<InventoryItem>();
+            inventoryItem.Initialize();
+            inventoryItem.SetItemObject(item);
+            inventoryItem.UpdateItemIcon();
+            inventoryItem.SetAmount(amount);
         }
     }
     public void Decrease(PickupItemObject item)
