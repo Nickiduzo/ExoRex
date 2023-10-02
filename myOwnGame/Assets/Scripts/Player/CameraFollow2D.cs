@@ -28,6 +28,11 @@ public class CameraFollow2D : MonoBehaviour
             playerPosition = new Vector3(playerPosition.x - offSet, playerPosition.y, playerPosition.z);
         }
 
+        if (followObject.transform.localScale.x < -11f)
+        {
+            Debug.Log("Player is nearly of limit");
+        }
+
         transform.position = Vector3.SmoothDamp(transform.position, playerPosition, ref velocity, smoothTime);
     }
     private void OnDrawGizmos()

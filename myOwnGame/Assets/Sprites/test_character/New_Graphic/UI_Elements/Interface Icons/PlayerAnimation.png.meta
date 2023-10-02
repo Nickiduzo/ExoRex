@@ -131,7 +131,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_4
+      name: Move_05
       rect:
         serializedVersion: 2
         x: 112
@@ -215,7 +215,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_5
+      name: Move_06
       rect:
         serializedVersion: 2
         x: 140
@@ -236,7 +236,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_6
+      name: Move_07
       rect:
         serializedVersion: 2
         x: 168
@@ -257,7 +257,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_7
+      name: Move_08
       rect:
         serializedVersion: 2
         x: 196
@@ -278,7 +278,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_8
+      name: Move_09
       rect:
         serializedVersion: 2
         x: 224
@@ -299,7 +299,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_9
+      name: Move_10
       rect:
         serializedVersion: 2
         x: 252
@@ -320,7 +320,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_10
+      name: Move_11
       rect:
         serializedVersion: 2
         x: 280
@@ -341,7 +341,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_11
+      name: Move_12
       rect:
         serializedVersion: 2
         x: 308
@@ -362,7 +362,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_12
+      name: Move_13
       rect:
         serializedVersion: 2
         x: 336
@@ -383,7 +383,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_13
+      name: Jump_01
       rect:
         serializedVersion: 2
         x: 0
@@ -404,7 +404,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_14
+      name: Jump_02
       rect:
         serializedVersion: 2
         x: 28
@@ -425,7 +425,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -438,7 +438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_15
+      name: Jump_03
       rect:
         serializedVersion: 2
         x: 56
@@ -446,7 +446,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_16
+      name: Jump_04
       rect:
         serializedVersion: 2
         x: 84
@@ -467,7 +467,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -480,7 +480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_17
+      name: Move_01
       rect:
         serializedVersion: 2
         x: 0
@@ -488,7 +488,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -501,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_18
+      name: Move_02
       rect:
         serializedVersion: 2
         x: 28
@@ -509,7 +509,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -522,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_19
+      name: Move_03
       rect:
         serializedVersion: 2
         x: 56
@@ -530,7 +530,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -543,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimation_20
+      name: Move_04
       rect:
         serializedVersion: 2
         x: 84
@@ -551,7 +551,7 @@ TextureImporter:
         width: 28
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -574,27 +574,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Jump_01: -1795966391
+      Jump_02: -2114129376
+      Jump_03: 1800235319
+      Jump_04: 1295343976
+      Move_01: -1383304926
+      Move_02: 1541199622
+      Move_03: 1986596430
+      Move_04: -1715101811
+      Move_05: -73148097
+      Move_06: -981710805
+      Move_07: -1829918151
+      Move_08: 408455101
+      Move_09: -358421441
+      Move_10: -1251458606
+      Move_11: -2072539735
+      Move_12: 1535435555
+      Move_13: -1425792086
       PlayerAnimation_0: 758008849
       PlayerAnimation_1: 1142885297
-      PlayerAnimation_10: -2072539735
-      PlayerAnimation_11: 1535435555
-      PlayerAnimation_12: -1425792086
-      PlayerAnimation_13: -1795966391
-      PlayerAnimation_14: -2114129376
-      PlayerAnimation_15: 1800235319
-      PlayerAnimation_16: 1295343976
-      PlayerAnimation_17: -1383304926
-      PlayerAnimation_18: 1541199622
-      PlayerAnimation_19: 1986596430
       PlayerAnimation_2: -207181097
-      PlayerAnimation_20: -1715101811
       PlayerAnimation_3: 545172552
-      PlayerAnimation_4: -73148097
-      PlayerAnimation_5: -981710805
-      PlayerAnimation_6: -1829918151
-      PlayerAnimation_7: 408455101
-      PlayerAnimation_8: -358421441
-      PlayerAnimation_9: -1251458606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

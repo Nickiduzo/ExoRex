@@ -14,27 +14,7 @@ public class PlayerInput : MonoBehaviour
         Event e = Event.current;
         if (e.isKey)
         {
-            switch (e.keyCode)
-            {
-                case KeyCode.E:
-                    pickupDetector?.PickupDetectedItems();
-                    break;
-                case KeyCode.T:
-                    panelInteraction.ShowPanel(0);
-                    break;
-                case KeyCode.Y:
-                    panelInteraction.ShowPanel(1);
-                    break;
-                case KeyCode.U:
-                    panelInteraction.ShowPanel(2);
-                    break;
-                case KeyCode.I:
-                    panelInteraction.ShowPanel(3);
-                    break;
-                case KeyCode.Escape:
-                    panelInteraction.HideAll();
-                    break;
-            }
+          
         }
     }
     private void Update()
