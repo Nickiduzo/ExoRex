@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f02001ff7137aa547b9f00313178990a
+guid: f88d51bdb7e1246428e3fd03abaa07cb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Left_First_Lock
+      name: Info_Lock
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 226
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e25da9a0cdbf09645949bcd7011b8ebc
-      internalID: 150548027
+      spriteID: 0007eb7f8ec0c4149aa804b9fcba8782
+      internalID: 406818978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left(45)_Lock
+      name: DoubleChance_Lock
       rect:
         serializedVersion: 2
         x: 226
@@ -152,20 +152,20 @@ TextureImporter:
         width: 252
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8ee75fd238d8584680df1e799db91ec
-      internalID: 1507401447
+      spriteID: 3feec0456f50c5c408a104347a02036e
+      internalID: -416471826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left(-45)_Lock
+      name: Ederium_Lock
       rect:
         serializedVersion: 2
         x: 478
@@ -173,20 +173,20 @@ TextureImporter:
         width: 171
         height: 191
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 318f3becda2cc0748a2dcd1def05288d
-      internalID: 1510880140
+      spriteID: e74369e311537f244b72a8207bdfd434
+      internalID: 1166483204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left(-45)_Unlock
+      name: Ederium_Unlock
       rect:
         serializedVersion: 2
         x: 649
@@ -194,20 +194,20 @@ TextureImporter:
         width: 171
         height: 191
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fe67d54ff677464fb9f330e052dd7c1
-      internalID: -869383120
+      spriteID: c11b4a5223ed391478fdb1bb639386e1
+      internalID: 511397371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left(135)_Lock
+      name: Mob_Lock
       rect:
         serializedVersion: 2
         x: 820
@@ -215,20 +215,20 @@ TextureImporter:
         width: 203
         height: 221
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04a3fb40a9fcea145ae8f92566fee5e9
-      internalID: 1640911533
+      spriteID: f85f90615002de44b8db2d1ef7b57a3c
+      internalID: -1406113474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_135_Unlock
+      name: Mob_Unlock
       rect:
         serializedVersion: 2
         x: 1023
@@ -236,104 +236,83 @@ TextureImporter:
         width: 203
         height: 221
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61acdc83cb5ec9840b4a76aacf763b25
-      internalID: -809437698
+      spriteID: ce1b7537bd941824ca23fb2212782893
+      internalID: 1213386058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_First_Unlock
+      name: Info_Unlock
       rect:
         serializedVersion: 2
         x: 0
-        y: 494
+        y: 491
         width: 226
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a0691594abca884d95923e29e856373
-      internalID: 787202977
+      spriteID: 319437c01c66b884c99bc430e1f81a6f
+      internalID: -1840359132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left(45)_Unlock
+      name: DoubleChance_Unlock
       rect:
         serializedVersion: 2
         x: 226
-        y: 478
+        y: 475
         width: 252
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae78d2a03c12f284bb2eb2ee4e6dc9ec
-      internalID: -1030971526
+      spriteID: 4950377d0e96b014aa67d223de4fca7e
+      internalID: 425466443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left(-135)_Lock
+      name: Chest_Lock
       rect:
         serializedVersion: 2
         x: 0
-        y: 332
-        width: 233
-        height: 137
+        y: 161
+        width: 310
+        height: 171
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65e01c4565537164c92a43b33d7fdda0
-      internalID: -1616728649
+      spriteID: 7f0c17552af41994298744a07b249d5b
+      internalID: -1095629332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lines_9
-      rect:
-        serializedVersion: 2
-        x: 706
-        y: 368
-        width: 224
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b82456addd54def4b9974ff4a0003f8d
-      internalID: -1750768521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BottomRight_Unlock
+      name: Chest_Unlock
       rect:
         serializedVersion: 2
         x: 310
@@ -341,161 +320,182 @@ TextureImporter:
         width: 310
         height: 171
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a94517203e73e9c4bb183e4a1897befb
-      internalID: -78681073
+      spriteID: 7645d3d182959894cae64236b94ebede
+      internalID: -1152063356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RightFirst_Lock
+      name: Another_Lock
       rect:
         serializedVersion: 2
-        x: 704
-        y: 203
+        x: 703
+        y: 314
         width: 275
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35f619b46a79a854a821c0b0326d6cbc
-      internalID: 663609160
+      spriteID: 44434ee62fd8cb24ba7855b2b88db2a9
+      internalID: 609229866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RightFirst_Unlock
+      name: Another_Unlock
       rect:
         serializedVersion: 2
         x: 979
-        y: 203
+        y: 314
         width: 275
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a349175ecfa8dd942bacdc4dc6773c40
-      internalID: -2058928296
+      spriteID: afe8d5a8c4a7b1f4b8809423c7fe7127
+      internalID: 13217397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpperRight_Lock
+      name: Arrow_Lock
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 371
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ccb0bae73c05349a68b34b75111a22
+      internalID: -1625988754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Unlock
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 371
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44c460a196703343bb68541d06719fe
+      internalID: 1677220604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanium_Unlock
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 0
+        width: 144
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5659663ed7277a3488526b1c1659e5af
+      internalID: -1475169739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titanium_Lock
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 0
+        width: 144
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401c385d6258a2b40bd15df4b8c67826
+      internalID: 455570201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Experience_Unlock
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 336
+        width: 236
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790289c73ad972c439edb580b7120d30
+      internalID: 1955308740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Experience_Lock
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 379
-        height: 161
+        y: 336
+        width: 236
+        height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d728e78387d8fde468c70d9185c97ff1
-      internalID: -1991512585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UpperRight_Unlock
-      rect:
-        serializedVersion: 2
-        x: 379
-        y: 0
-        width: 379
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5af7621c2fe709947b21bb4c3942c977
-      internalID: 1195310163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lines_0
-      rect:
-        serializedVersion: 2
-        x: 482
-        y: 368
-        width: 224
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ef26ae4cb9b74d419ef63980b7ef2de
-      internalID: -788595543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Left(-135) - Unlock
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 332
-        width: 233
-        height: 137
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c99e4f51331a65f4fad0c5bbea1ef540
-      internalID: -1886722846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BottomRight_Lock
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 161
-        width: 310
-        height: 171
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd93602f1ce8bcd4299a10747929bffc
-      internalID: 1821483669
+      spriteID: 0b023f381eaadf049a1f0b81c5889130
+      internalID: 991525688
       vertices: []
       indices: 
       edges: []
@@ -511,24 +511,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BottomRight_Lock: 1821483669
-      BottomRight_Unlock: -78681073
-      Left(-135) - Unlock: -1886722846
-      Left(-135)_Lock: -1616728649
-      Left(-45)_Lock: 1510880140
-      Left(-45)_Unlock: -869383120
-      Left(135)_Lock: 1640911533
-      Left(45)_Lock: 1507401447
-      Left(45)_Unlock: -1030971526
-      Left_135_Unlock: -809437698
-      Left_First_Lock: 150548027
-      Left_First_Unlock: 787202977
-      Lines_0: -788595543
-      Lines_9: -1750768521
-      RightFirst_Lock: 663609160
-      RightFirst_Unlock: -2058928296
-      UpperRight_Lock: -1991512585
-      UpperRight_Unlock: 1195310163
+      Another_Lock: 609229866
+      Another_Unlock: 13217397
+      Arrow_Lock: -1625988754
+      Arrow_Unlock: 1677220604
+      Chest_Lock: -1095629332
+      Chest_Unlock: -1152063356
+      DoubleChance_Lock: -416471826
+      DoubleChance_Unlock: 425466443
+      Ederium_Lock: 1166483204
+      Ederium_Unlock: 511397371
+      Experience_Lock: 991525688
+      Experience_Unlock: 1955308740
+      Info_Lock: 406818978
+      Info_Unlock: -1840359132
+      Mob_Lock: -1406113474
+      Mob_Unlock: 1213386058
+      Titanium_Lock: 455570201
+      Titanium_Unlock: -1475169739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
