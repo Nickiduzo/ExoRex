@@ -68,7 +68,7 @@ Prepare to soar higher than the stars and brace yourself for a captivating journ
 
 # ExoRex
 
-![Скриншот игры](screenshot.png)
+![Скриншот игры](https://github.com/Nickiduzo/ExoRex/blob/main/Insctruction/IImages/mainGame.png)
 
 Описание вашей увлекательной 2D игры на Unity, которая объединяет элементы шутера, платформера и атмосферу с зомби-монстрами. Вам предстоит исследовать мрачный мир, добывать ископаемые, улучшать персонажа и раскрывать захватывающую историю.
 
