@@ -37,10 +37,6 @@ public class InventoryItem : MonoBehaviour, ISelectHandler
 
     public void UpdateDescriptionData()
     {
-        PanelInteraction.Instance.DescriptionPanel.ItemIcon.sprite = itemObject.Icon;
-        PanelInteraction.Instance.DescriptionPanel.ItemIcon.preserveAspect = true;
-        PanelInteraction.Instance.DescriptionPanel.ItemName.text = itemObject.Name;
-        PanelInteraction.Instance.DescriptionPanel.ItemDescription.text = itemObject.Description;
     }
     public void OnSelect(BaseEventData eventData)
     {
