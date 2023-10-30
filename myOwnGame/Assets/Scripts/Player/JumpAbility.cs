@@ -41,14 +41,14 @@ public class JumpAbility : MonoBehaviour
             ExecuteJumpFunctionality();
             currentJumpCount = 1;
         }
-        else
-        {
-            if (currentJumpCount < 2)
-            {
-                ExecuteJumpFunctionality();
-                currentJumpCount++;
-            }
-        }
+        //else
+        //{
+        //    if (currentJumpCount < 2)
+        //    {
+        //        ExecuteJumpFunctionality();
+        //        currentJumpCount++;
+        //    }
+        //}
     }
     private void ExecuteJumpFunctionality()
     {

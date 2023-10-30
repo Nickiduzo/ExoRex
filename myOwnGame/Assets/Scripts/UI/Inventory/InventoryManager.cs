@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,7 +20,18 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItem(Item item)
     {
-        items.Add(item);
+        bool itemExists = false;
+        foreach (var existingItem in items)
+        {
+            if (existingItem == item)
+            {
+                existingItem.amount++;
+                itemExists = true;
+                break;
+            }
+        }
+
+        if (!itemExists) items.Add(item);
     }
 
     public void RemoveItem(Item item)
@@ -37,13 +49,13 @@ public class InventoryManager : MonoBehaviour
         foreach (var item in items)
         {
             GameObject material = Instantiate(InventoryItem, ItemContent);
-            var itemName = material.transform.Find("ItemName").GetComponent<TextMeshProUGUI>();
+            var itemNameText = material.transform.Find("ItemName").GetComponent<TextMeshProUGUI>();
             var itemIcon = material.transform.Find("ItemIcon").GetComponent<Image>();
+            var itemAmount = material.transform.Find("Amount").GetComponent<TextMeshProUGUI>();
 
-            item.name = item.itemName;
+            itemNameText.text = item.itemName;
             itemIcon.sprite = item.icon;
-
-            if (items.Contains(item)) item.amount++;
+            itemAmount.text = item.amount.ToString();
         }
     }
 }
