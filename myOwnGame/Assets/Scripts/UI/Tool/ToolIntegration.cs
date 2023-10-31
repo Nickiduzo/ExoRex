@@ -9,12 +9,12 @@ public class ToolIntegration : MonoBehaviour
     {
         inventory = InventoryManager.Instance;
     }
-    private void UseBoer()
+    public void UseBoer()
     {
         var BoerEquip = player.transform.Find("Boer");
         if (IsContainItem()) boer.SetActive(true);
     }
-    private void DeuseBoer()
+    public void DeuseBoer()
     {
         if (IsContainItem())
         {
