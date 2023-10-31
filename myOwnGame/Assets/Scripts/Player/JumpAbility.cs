@@ -11,7 +11,7 @@ public class JumpAbility : MonoBehaviour
     [SerializeField] private float jumpForce = 7f;
     private Rigidbody2D rb;
     private GroundCheck groundCheck;
-    private int currentJumpCount = 0;
+    //private int currentJumpCount = 0;
 
     private void Awake()
     {
@@ -39,16 +39,16 @@ public class JumpAbility : MonoBehaviour
         if (groundCheck.IsGrounded)
         {
             ExecuteJumpFunctionality();
-            currentJumpCount = 1;
+            //currentJumpCount = 1;
         }
-        else
-        {
-            if (currentJumpCount < 2)
-            {
-                ExecuteJumpFunctionality();
-                currentJumpCount++;
-            }
-        }
+        //else
+        //{
+        //    if (currentJumpCount < 2)
+        //    {
+        //        ExecuteJumpFunctionality();
+        //        currentJumpCount++;
+        //    }
+        //}
     }
     private void ExecuteJumpFunctionality()
     {

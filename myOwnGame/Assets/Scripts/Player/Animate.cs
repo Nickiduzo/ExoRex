@@ -11,6 +11,10 @@ public class Animate : MonoBehaviour
         rigidBody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
+    private void FixedUpdate()
+    {
+        if (Input.GetMouseButtonDown(0)) animator.SetTrigger("Mining");
+    }
     private void Update()
     {
         if (Input.GetKey(KeyCode.D)) animator.SetBool("isMoving", true);
