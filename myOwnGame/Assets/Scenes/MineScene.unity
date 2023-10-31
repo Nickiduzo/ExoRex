@@ -10371,6 +10371,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3769091165406205339, guid: 796707485731cfc46a4d4f94a29d3041, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1141609150}
+    - targetCorrespondingSourceObject: {fileID: 3769091165406205339, guid: 796707485731cfc46a4d4f94a29d3041, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1141609151}
   m_SourcePrefab: {fileID: 100100000, guid: 796707485731cfc46a4d4f94a29d3041, type: 3}
 --- !u!4 &1141609147 stripped
 Transform:
@@ -10422,6 +10425,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.61, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1141609151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546326763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3edd6277a1bcf5445b315be0a28c08a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titanium: {fileID: 4591136846054296442, guid: 1ffcf99dbd18c7342bad750051603a3e, type: 3}
+  destroyEffect: {fileID: 439985331438033683, guid: 0ae4a7d2fa6987748b547a73a2ebab73, type: 3}
+  player: {fileID: 1966652191}
 --- !u!1 &1151146743
 GameObject:
   m_ObjectHideFlags: 0
@@ -20289,6 +20307,10 @@ PrefabInstance:
     - target: {fileID: 2715726054593711152, guid: 562cf692867116144808c1bec2c7de10, type: 3}
       propertyPath: m_SortingOrder
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079533468355191179, guid: 562cf692867116144808c1bec2c7de10, type: 3}
+      propertyPath: speed
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3722391424824047781, guid: 562cf692867116144808c1bec2c7de10, type: 3}
       propertyPath: m_IsActive
