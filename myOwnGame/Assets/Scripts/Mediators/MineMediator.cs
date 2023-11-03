@@ -1,18 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MineMediator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //[SerializeField] private CloudSpawner cloudSpawner;
+    //private Cloud[] clouds;
+    //private void Start()
+    //{
+    //    clouds = SpawnCloud();
+    //}
+    //private void Update()
+    //{
+    //    cloudSpawner.RespawnClouds(clouds);
+    //}
+    //private Cloud[] SpawnCloud()
+    //{
+    //    Cloud[] clouds = new Cloud[6];
+    //    clouds = cloudSpawner.SpawnCloud(clouds);
+    //    return clouds;
+    //}
 }
