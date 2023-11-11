@@ -4321,6 +4321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LowCloud
       objectReference: {fileID: 0}
+    - target: {fileID: 6686389740575619551, guid: 7004e6a31124a3342a6467e5a186e48a, type: 3}
+      propertyPath: cloudSpeed
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8984835936059172666, guid: 7004e6a31124a3342a6467e5a186e48a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.78
@@ -13208,7 +13212,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1386527441969127101, guid: 429b332487257734b9be65d6c8e346ea, type: 3}
       propertyPath: cloudSpeed
-      value: 0.6
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4736900661775385786, guid: 429b332487257734b9be65d6c8e346ea, type: 3}
       propertyPath: m_Name
@@ -19540,6 +19544,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2447405011454076182, guid: 37c6aded629eb914fa68d435c9edad97, type: 3}
+      propertyPath: cloudSpeed
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7248264338911683609, guid: 37c6aded629eb914fa68d435c9edad97, type: 3}
       propertyPath: m_Name
       value: LargeCloud
@@ -19856,6 +19864,10 @@ PrefabInstance:
     - target: {fileID: 7049001055341057832, guid: 2a05b5b750c8ba64eab5013963e9925d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7838504050555984823, guid: 2a05b5b750c8ba64eab5013963e9925d, type: 3}
+      propertyPath: cloudSpeed
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
