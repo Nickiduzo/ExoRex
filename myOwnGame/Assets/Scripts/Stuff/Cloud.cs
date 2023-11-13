@@ -2,11 +2,18 @@ using UnityEngine;
 
 public class Cloud : MonoBehaviour
 {
-    [SerializeField]
-    private float speedValue = 0.3f;
-
+    private float speed;
+    private void Awake()
+    {
+        speed = RandomSpeed();
+    }
     private void Update()
     {
-        transform.Translate(Vector3.right * Time.deltaTime * speedValue);
+        transform.Translate(Vector2.right * Time.deltaTime * speed);
+    }
+
+    private float RandomSpeed()
+    {
+        return UnityEngine.Random.Range(0.2f, 1f);
     }
 }
