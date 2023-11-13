@@ -2,19 +2,11 @@ using UnityEngine;
 
 public class Cloud : MonoBehaviour
 {
-    [SerializeField] private float cloudSpeed = 1.3f;
+    [SerializeField]
+    private float speedValue = 0.3f;
 
-    private GameObject player;
-    private void Awake()
+    private void Update()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
-    private void FixedUpdate()
-    {
-        transform.Translate(Vector2.right * cloudSpeed * Time.deltaTime);
-        if (transform.position.x >= 78f)
-        {
-            gameObject.SetActive(false);
-        }
+        transform.Translate(Vector3.right * Time.deltaTime * speedValue);
     }
 }

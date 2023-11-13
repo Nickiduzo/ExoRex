@@ -1,86 +1,55 @@
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-public class PoolBase<T> where T : MonoBehaviour
+
+public class PoolBase<T>
 {
-    private readonly Transform container;
-    private readonly T prefab;
-    private readonly List<T> freeElements = new();
-    private readonly bool autoExpand;
-    private readonly bool reusable;
-    private List<T> pool;
+    private Queue<T> pool = new Queue<T>();
+    private List<T> activate = new List<T>();
 
-    public PoolBase(T prefab, int countInPool, bool autoExpand, bool reusable = true, Transform container = null)
-    {
-        this.reusable = reusable;
-        this.prefab = prefab;
-        this.container = container;
-        this.autoExpand = autoExpand;
-        CreatePool(countInPool);
-    }
+    private Func<T> preloadFunc;
+    private Action<T> getAction;
+    private Action<T> returnAction;
 
-    private bool HasFreeElement(out T element)
+    public PoolBase(Func<T> preloadFunc, Action<T> getAction, Action<T> returnAction, int preloadCount)
     {
-        foreach (var mono in pool.Where(mono => !mono.gameObject.activeInHierarchy))
+        this.preloadFunc = preloadFunc;
+        this.getAction = getAction;
+        this.returnAction = returnAction;
+ 
+        if (preloadFunc == null)
         {
-            freeElements.Add(mono);
+            Debug.Log("Pizdec - pool unwork(null)");
+            return;
         }
 
-        if (freeElements.Count == 0)
+        for (int i = 0; i < preloadCount; i++)
         {
-            element = null;
-            return false;
+            Return(preloadFunc());
         }
-
-        element = freeElements[Random.Range(0, freeElements.Count)];
-        element.gameObject.SetActive(true);
-        freeElements.Clear();
-        return true;
     }
 
-    public bool HasFreeElement()
+    public T Get()
     {
-        foreach (var mono in pool.Where(mono => !mono.gameObject.activeInHierarchy))
-        {
-            freeElements.Add(mono);
-        }
+        T item = pool.Count > 0 ? pool.Dequeue() : preloadFunc();
+        getAction(item);
+        activate.Add(item);
 
-        if (freeElements.Count == 0)
-        {
-            return false;
-        }
-
-        freeElements.Clear();
-        return true;
-    }
-    public T GetFreeElement()
-    {
-        if (HasFreeElement(out var element))
-        {
-            if (!reusable)
-                pool.Remove(element);
-
-            return element;
-        }
-
-        if (autoExpand)
-            CreateObject(true);
-
-        throw new System.Exception($"There is no elements in pool of type {typeof(T)}");
+        return item;
     }
 
-    private void CreatePool(int countInPool)
+    public void Return(T item)
     {
-        pool = new List<T>();
-
-        for (int i = 0; i < countInPool; i++)
-            CreateObject();
+        returnAction(item);
+        pool.Enqueue(item);
+        activate.Remove(item);
     }
 
-    private void CreateObject(bool isActiveByDefault = false)
+    public void ReturnAll()
     {
-        var createdObj = Object.Instantiate(prefab, container);
-        createdObj.gameObject.SetActive(isActiveByDefault);
-        pool.Add(createdObj);
+        foreach (T item in activate.ToArray())
+        {
+            Return(item);
+        }
     }
 }
