@@ -11,7 +11,7 @@ public class CloudSpawner : MonoBehaviour
 
     private List<GameObject> mainClouds;
 
-    private void Start()
+    private void Awake()
     {
         InitializeClouds();
     }
@@ -19,14 +19,15 @@ public class CloudSpawner : MonoBehaviour
     private void Update()
     {
         DeactivateCloud();
-        ActivateCloud();
-    }
-
-    private void ActivateCloud()
-    {
-        GameObject cloud = mainClouds.FirstOrDefault(x => !x.activeSelf);
-        cloud.transform.position = RandomPosition();
-        cloud.SetActive(true);
+        
+        foreach (var cloud in mainClouds)
+        {
+            if (!cloud.gameObject.activeSelf)
+            {
+                cloud.transform.position = RandomPosition();
+                cloud.SetActive(true);
+            }
+        }
     }
 
     private void DeactivateCloud()
@@ -43,16 +44,18 @@ public class CloudSpawner : MonoBehaviour
     {
         mainClouds = new List<GameObject>();
 
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 10; i++)
         {
-            mainClouds.Add(SpawnCloud());
+            GameObject cloud = SpawnCloud();
+            cloud.transform.position = new Vector3(UnityEngine.Random.Range(firstPosition.position.x, lastPosition.position.x), UnityEngine.Random.Range(1.5f, 3f));
+            mainClouds.Add(cloud);
         }
     }
     private GameObject SpawnCloud()
     {
         int cloudIndex = UnityEngine.Random.Range(0, clouds.Length);
         GameObject cloud = Instantiate(clouds[cloudIndex], RandomPosition(), Quaternion.identity);
-        cloud.transform.parent = transform;
+        cloud.transform.localScale = RandomScaleObject();
 
         return cloud;
     }
@@ -66,5 +69,12 @@ public class CloudSpawner : MonoBehaviour
         float randomY = UnityEngine.Random.Range(bottomLimitY, upperLimitY);
 
         return new Vector2(randomX, randomY);
+    }
+    
+    private Vector3 RandomScaleObject()
+    {
+        float randomValue = Random.Range(0.2f, 1f);
+        
+        return new Vector3(randomValue,randomValue,randomValue);
     }
 }

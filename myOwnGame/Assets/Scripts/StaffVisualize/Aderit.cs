@@ -7,9 +7,14 @@ public class Aderit : MonoBehaviour
     [SerializeField] private GameObject player;
 
     private Animator animator;
+    private PlayerInput playerInput;
+    private GameObject boer;
     private void Start()
     {
         animator = GetComponent<Animator>();
+        playerInput = player.GetComponent<PlayerInput>();
+
+        boer = playerInput.FindObject("Boer");
     }
     private void OnMouseDrag()
     {
@@ -17,7 +22,7 @@ public class Aderit : MonoBehaviour
         float playerX = player.transform.position.x;
         float itemX = gameObject.transform.position.x;
 
-        if (Mathf.Abs(playerX - itemX) <= pickupRadius)
+        if (Mathf.Abs(playerX - itemX) <= pickupRadius && boer.gameObject.activeSelf)
         {
             animator.SetTrigger("Mine");
         }

@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
@@ -18,5 +19,16 @@ public class PlayerInput : MonoBehaviour
     {
         movement?.Move(horizontal);
         spriteOrientation?.Flip(horizontal);
+    }
+
+    public GameObject FindObject(string name)
+    {
+        Transform obj = transform.Find(name);
+
+        if(obj == null)
+        {
+            UnityEngine.Debug.Log($"{obj.name} - null");
+        }
+        return obj.transform.gameObject;
     }
 }

@@ -4,11 +4,9 @@ public class Animate : MonoBehaviour
 {
     [SerializeField] private bool isRightSide = true;
     
-    private Rigidbody2D rigidBody2D;
     private Animator animator;
     void Start()
     {
-        rigidBody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
     private void Update()

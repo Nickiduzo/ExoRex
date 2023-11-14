@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Ederium : MonoBehaviour
@@ -7,9 +8,14 @@ public class Ederium : MonoBehaviour
     [SerializeField] private GameObject player;
 
     private Animator animator;
-    private void Start()
+    private PlayerInput playerInput;
+    private GameObject boer;
+    private void Awake()
     {
         animator = GetComponent<Animator>();
+        playerInput = player.GetComponent<PlayerInput>();
+
+        boer = playerInput.FindObject("Boer");
     }
     private void OnMouseDrag()
     {
@@ -17,7 +23,7 @@ public class Ederium : MonoBehaviour
         float playerX = player.transform.position.x;
         float itemX = gameObject.transform.position.x;
 
-        if (Mathf.Abs(playerX - itemX) <= pickupRadius)
+        if (Mathf.Abs(playerX - itemX) <= pickupRadius && boer.gameObject.activeSelf)
         {
             animator.SetTrigger("Mine");
         }

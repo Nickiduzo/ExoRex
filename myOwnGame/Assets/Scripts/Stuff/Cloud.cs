@@ -14,6 +14,6 @@ public class Cloud : MonoBehaviour
 
     private float RandomSpeed()
     {
-        return UnityEngine.Random.Range(0.2f, 1f);
+        return UnityEngine.Random.Range(0.3f, 0.8f);
     }
 }
