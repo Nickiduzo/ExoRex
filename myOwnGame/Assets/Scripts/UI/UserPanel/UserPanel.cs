@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class UserPanel : MonoBehaviour
@@ -9,10 +10,15 @@ public class UserPanel : MonoBehaviour
     [SerializeField] private Sprite[] buttonSprites;
 
     [SerializeField] private Sprite[] defaultSpriteButtons;
+
+    public UnityEvent onHideHUD = new UnityEvent();
+    public UnityEvent onShowHUD = new UnityEvent();
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.B))
         {
+            onShowHUD.Invoke();
             DefaultSpriteButton();
             ChangeButtonSprite(0);
             InventoryManager.Instance.ListItems();
@@ -20,18 +26,21 @@ public class UserPanel : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.U))
         {
+            onShowHUD.Invoke();
             DefaultSpriteButton();
             ChangeButtonSprite(1);
             SwitchPanel("Mineral");
         }
         else if (Input.GetKeyDown(KeyCode.I))
         {
+            onShowHUD.Invoke();
             DefaultSpriteButton();
             ChangeButtonSprite(2);
             SwitchPanel("Tool");
         }
         else if (Input.GetKeyDown(KeyCode.O))
         {
+            onShowHUD.Invoke();
             DefaultSpriteButton();
             ChangeButtonSprite(3);
             SwitchPanel("Implant");
@@ -39,6 +48,7 @@ public class UserPanel : MonoBehaviour
         else if(Input.GetKeyDown(KeyCode.Escape))
         {
             userHud.SetActive(false);
+            onHideHUD.Invoke();
         }
     }
     public void ChangeButtonSprite(int buttonIndex)

@@ -4,24 +4,20 @@ public class Animate : MonoBehaviour
 {
     [SerializeField] private bool isRightSide = true;
     
-    private Rigidbody2D rigidBody2D;
     private Animator animator;
     void Start()
     {
-        rigidBody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-    }
-    private void FixedUpdate()
-    {
-        if (Input.GetMouseButtonDown(0)) animator.SetTrigger("Mining");
     }
     private void Update()
     {
-        if (Input.GetKey(KeyCode.D)) animator.SetBool("isMoving", true);
+        if (Input.GetMouseButtonDown(0)) animator.SetBool("isMining", true);
+        else if (Input.GetKey(KeyCode.D)) animator.SetBool("isMoving", true);
         else if (Input.GetKey(KeyCode.A)) animator.SetBool("isMoving", true);
         else
         {
             animator.SetBool("isMoving", false);
+            animator.SetBool("isMining", false);
         }
     }
     private void Spin()

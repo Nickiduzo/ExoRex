@@ -17,8 +17,8 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
+  - Spine
+  - PlayerHUD
   - 
   - 
   - 
@@ -48,4 +48,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 2287407911
+    locked: 0
+  - name: PlayerHUD
+    uniqueID: 3747812129
     locked: 0

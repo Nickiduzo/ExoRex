@@ -15,7 +15,7 @@ public class EnemyBehaviour : MonoBehaviour
     [SerializeField] private LayerMask playerMask;
     private float coolDownTimer = Mathf.Infinity;
 
-    public MovingPlayer healthPlayer;
+    public Movement healthPlayer;
     private Animator anim;
 
     private EnemyPatroller enemyPatroller;
@@ -77,8 +77,8 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (hit.collider != null)
         {
-            healthPlayer = hit.transform.GetComponent<MovingPlayer>();
-            audioManager.PlaySound(zombieAttackSound);
+            healthPlayer = hit.transform.GetComponent<Movement>();
+            //audioManager.PlaySound(zombieAttackSound);
         }
 
         return hit.collider != null;
@@ -89,8 +89,8 @@ public class EnemyBehaviour : MonoBehaviour
         Gizmos.DrawWireCube(areaOfPatrol.bounds.center + transform.right * range * transform.localScale.x * colliderDistance, 
             new Vector3(areaOfPatrol.bounds.size.x * range, areaOfPatrol.bounds.size.y, areaOfPatrol.bounds.size.z));
     }
-    private void DamagePlayer()
-    {
-        if (PlayerIsNearly()) healthPlayer.TakeDamage(enemyDamage);
-    }
+    //private void DamagePlayer()
+    //{
+    //    if (PlayerIsNearly()) healthPlayer.TakeDamage(enemyDamage);
+    //}
 }

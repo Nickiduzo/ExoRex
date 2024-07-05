@@ -123,11 +123,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: items_0
+      name: Bush
       rect:
         serializedVersion: 2
         x: 156
-        y: 124
+        y: 125
         width: 19
         height: 18
       alignment: 0
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_1
+      name: Bush_Dir
       rect:
         serializedVersion: 2
         x: 176
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_2
+      name: Stone
       rect:
         serializedVersion: 2
         x: 197
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_3
+      name: Totem
       rect:
         serializedVersion: 2
         x: 214
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_4
+      name: Ederium_0
       rect:
         serializedVersion: 2
         x: 240
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_5
+      name: Small_Stone
       rect:
         serializedVersion: 2
         x: 158
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_6
+      name: Dry_Skull
       rect:
         serializedVersion: 2
         x: 171
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_7
+      name: Machine_Skull
       rect:
         serializedVersion: 2
         x: 190
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_10
+      name: Aderit_
       rect:
         serializedVersion: 2
         x: 242
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_12
+      name: Aderit_1
       rect:
         serializedVersion: 2
         x: 242
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_14
+      name: Shuttle_Small_Chip
       rect:
         serializedVersion: 2
         x: 210
@@ -438,7 +438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_15
+      name: Shuttle_Medium_Chip
       rect:
         serializedVersion: 2
         x: 227
@@ -501,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_18
+      name: Ederium_1
       rect:
         serializedVersion: 2
         x: 261
@@ -522,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_19
+      name: Ederium_2
       rect:
         serializedVersion: 2
         x: 259
@@ -543,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_20
+      name: Ederium_3
       rect:
         serializedVersion: 2
         x: 260
@@ -564,7 +564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_21
+      name: Ederium_4
       rect:
         serializedVersion: 2
         x: 264
@@ -648,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_25
+      name: Dry_Grass
       rect:
         serializedVersion: 2
         x: 266
@@ -669,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_26
+      name: Small_Grass
       rect:
         serializedVersion: 2
         x: 303
@@ -690,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_27
+      name: Grass
       rect:
         serializedVersion: 2
         x: 290
@@ -711,7 +711,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_28
+      name: Big_Dry_Bush
       rect:
         serializedVersion: 2
         x: 296
@@ -795,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_32
+      name: Hill_Green_0
       rect:
         serializedVersion: 2
         x: 331
@@ -816,7 +816,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_33
+      name: Hill_Dry_0
       rect:
         serializedVersion: 2
         x: 331
@@ -858,7 +858,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_35
+      name: Medium_Dry_Bush
       rect:
         serializedVersion: 2
         x: 347
@@ -900,7 +900,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_37
+      name: Big_Green_Bush
       rect:
         serializedVersion: 2
         x: 285
@@ -921,7 +921,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_38
+      name: Tree_Migo
       rect:
         serializedVersion: 2
         x: 90
@@ -942,7 +942,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_41
+      name: Large_Dry_Grass
       rect:
         serializedVersion: 2
         x: 98
@@ -963,7 +963,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_42
+      name: Large_Green_Grass
       rect:
         serializedVersion: 2
         x: 98
@@ -1097,7 +1097,7 @@ TextureImporter:
         width: 51
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1118,7 +1118,7 @@ TextureImporter:
         width: 51
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1126,6 +1126,363 @@ TextureImporter:
       bones: []
       spriteID: 7ab4f3bf2b6156647ac006572191ef93
       internalID: 2056833335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aderit_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 117
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9abca90959e3d5408b325d4e035f62e
+      internalID: 22212941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aderit_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 117
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2285051c7b50f4aa51ede49ee4de18
+      internalID: -215068916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aderit_4
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 117
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b46133f2b437f743952a9659d4d78b7
+      internalID: 2083275145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey_Liana
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf852e1754ed91741bb2b99aebb578f3
+      internalID: -115287734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey_Mushroom
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c55ea74a5554fd4f97d794f5120db22
+      internalID: 25721226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short_Upper
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 7
+        width: 51
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fbe552acb8b904bb6b7c814bbf80a6
+      internalID: 1354962064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spich
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 5
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c9ad625b02809458f55c770231e759
+      internalID: 932867708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec2060b46a02a348889c47c8a4d7fe5
+      internalID: -994920232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: items_51
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 56
+        width: 51
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debac0768bade6648af018bfaa3ca0f1
+      internalID: 701495030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: items_52
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 87
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d720c1e26bfdfc34291b58326b00c336
+      internalID: -2061815165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: items_53
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 126
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcc8bd1e8fe9644e91a0b730e8bc5dd
+      internalID: -1399441886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: items_54
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 142
+        width: 53
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbc0246e5d4a1342ab12a0fb3158ec7
+      internalID: -319613387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hill_Dry2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 159
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7a541c35547e048bbc017c49f3c4f0
+      internalID: -483984974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hill_Dry_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 184
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebe28d9777a0b641bce3dea8673ebba
+      internalID: -1969236121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: items_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9dbc21046ddd34d98159bad49d678c
+      internalID: -335147976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: items_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 167
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f449f354c298e143875fd94a40abd0d
+      internalID: 1845273508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 30
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97fd92e59b634c4b86853970750b96f
+      internalID: -558868997
       vertices: []
       indices: 
       edges: []
@@ -1141,52 +1498,69 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      items_0: -1290826415
-      items_1: 1346173957
-      items_10: 204427881
+      Aderit_: 204427881
+      Aderit_1: 1059156830
+      Aderit_2: 22212941
+      Aderit_3: -215068916
+      Aderit_4: 2083275145
+      Big_Dry_Bush: 1370654306
+      Big_Green_Bush: -716132242
+      Bush: -1290826415
+      Bush_Dir: 1346173957
+      Dry_Grass: -627014045
+      Dry_Skull: -617423008
+      Ederium_0: 658222693
+      Ederium_1: -897335869
+      Ederium_2: 1893738826
+      Ederium_3: 552034352
+      Ederium_4: -1098862873
+      Grass: 203334625
+      Grey_Liana: 701495030
+      Grey_Mushroom: -2061815165
+      Hill_Dry2: -483984974
+      Hill_Dry_0: -220543432
+      Hill_Dry_1: -1969236121
+      Hill_Green_0: -1761193534
+      Large_Dry_Grass: -985016450
+      Large_Green_Grass: -1465123808
+      Machine_Skull: -182362123
+      Medium_Dry_Bush: 1107031878
+      Mushroom: -994920232
+      Short_Upper: 1354962064
+      Shuttle_Medium_Chip: -607296025
+      Shuttle_Small_Chip: -1273775780
+      Small_Grass: 1432883732
+      Small_Stone: -512534750
+      Spich: 932867708
+      Stone: 211323238
+      Totem: -1833574038
+      Tree: -558868997
+      Tree_Migo: 177721736
       items_11: 1487402417
-      items_12: 1059156830
       items_13: 195107266
-      items_14: -1273775780
-      items_15: -607296025
       items_16: -740085161
       items_17: -1110406875
-      items_18: -897335869
-      items_19: 1893738826
-      items_2: 211323238
-      items_20: 552034352
-      items_21: -1098862873
       items_22: -426910048
       items_23: 2021166630
       items_24: 1560795241
-      items_25: -627014045
-      items_26: 1432883732
-      items_27: 203334625
-      items_28: 1370654306
       items_29: -1900817378
-      items_3: -1833574038
       items_30: -116994734
       items_31: 2110955148
-      items_32: -1761193534
-      items_33: -220543432
       items_34: 1616187456
-      items_35: 1107031878
       items_36: 1655767506
-      items_37: -716132242
-      items_38: 177721736
       items_39: 546695888
-      items_4: 658222693
       items_40: 2056833335
-      items_41: -985016450
-      items_42: -1465123808
       items_43: -1966311828
       items_44: -1206391926
       items_45: -1645300410
       items_46: -730779128
       items_47: 2118826224
-      items_5: -512534750
-      items_6: -617423008
-      items_7: -182362123
+      items_51: 701495030
+      items_52: -2061815165
+      items_53: -1399441886
+      items_54: -319613387
+      items_57: -335147976
+      items_58: 1845273508
       items_8: -738711835
       items_9: -1170220751
   mipmapLimitGroupName: 
