@@ -2,66 +2,50 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    [Header("AttackParametrs")]
-    [SerializeField] private float range;
-    [SerializeField] private float attackCoolDown;
+    [Header("Enemy Settings")]
+    [SerializeField] private float range = 1.5f;
+    [SerializeField] private float attackCooldown = 2f;
     [SerializeField] private int enemyDamage = 30;
-
-    [Header("Colliders")]
-    [SerializeField] private BoxCollider2D areaOfPatrol;
-    [SerializeField] private float colliderDistance;
-
-    [Header("Player Mask")]
     [SerializeField] private LayerMask playerMask;
-    private float coolDownTimer = Mathf.Infinity;
 
-    public Movement healthPlayer;
+    [Header("Components")]
+    [SerializeField] private BoxCollider2D areaOfPatrol;
     private Animator anim;
-
+    private Movement healthPlayer;
     private EnemyPatroller enemyPatroller;
     private HealthPoints healthPoints;
-    private Death death;
-    
-    private AudioManager audioManager;
-    public string zombieAttackSound = "ZombieAttack";
+
+    [Header("Loot Settings")]
+    [SerializeField]
+    private Loot[] possibleLoots = new Loot[]
+    {
+        new Loot { lootType = LootType.Ederium, minAmount = 1, maxAmount = 2, dropChance = 15f },
+        new Loot { lootType = LootType.Titanium, minAmount = 1, maxAmount = 1, dropChance = 1f },
+        new Loot { lootType = LootType.Aderit, minAmount = 1, maxAmount = 5, dropChance = 84f }
+    };
+
+    private float cooldownTimer = Mathf.Infinity;
 
     private void Start()
     {
-        death = GetComponent<Death>();
-        death.OnDieActivate += ActivateDieBehaviour;
+        InitializeComponents();
+    }
 
+    private void InitializeComponents()
+    {
+        anim = GetComponent<Animator>();
         healthPoints = GetComponent<HealthPoints>();
         enemyPatroller = GetComponentInParent<EnemyPatroller>();
-        anim = GetComponent<Animator>();
+    }
 
-        audioManager = AudioManager.instance;
-    }
-    private void OnDestroy()
-    {
-        death.OnDieActivate -= ActivateDieBehaviour;
-    }
     private void Update()
     {
-        attackCoolDown += Time.deltaTime;
-
-        if (PlayerIsNearly() == true)
-        {
-            if (coolDownTimer >= attackCoolDown)
-            {
-                attackCoolDown = 0;
-                anim.SetTrigger("isAttacking");
-            }
-        }
-
-        if (enemyPatroller != null)
-        {
-            enemyPatroller.enabled = !PlayerIsNearly();
-        }
+        UpdateAttackCooldown();
     }
-    public void ActivateDieBehaviour()
+
+    private void UpdateAttackCooldown()
     {
-        anim.SetTrigger("isDie");
-        this.enabled = false;
+        cooldownTimer += Time.deltaTime;
     }
 
     public void TakeDamage(int damage)
@@ -69,28 +53,14 @@ public class EnemyBehaviour : MonoBehaviour
         anim.SetTrigger("isTakeDamage");
         healthPoints.DecreaseHealth(damage);
     }
-    private bool PlayerIsNearly()
-    {
-        RaycastHit2D hit = Physics2D.BoxCast(areaOfPatrol.bounds.center + transform.right * range * transform.localScale.x * colliderDistance
-            ,new Vector3(areaOfPatrol.bounds.size.x * range, areaOfPatrol.bounds.size.y,areaOfPatrol.bounds.size.z),
-            0, Vector2.left,0,playerMask);
 
-        if (hit.collider != null)
-        {
-            healthPlayer = hit.transform.GetComponent<Movement>();
-            //audioManager.PlaySound(zombieAttackSound);
-        }
-
-        return hit.collider != null;
-    }
-    private void OnDrawGizmos()
+    private void OnDestroy()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(areaOfPatrol.bounds.center + transform.right * range * transform.localScale.x * colliderDistance, 
-            new Vector3(areaOfPatrol.bounds.size.x * range, areaOfPatrol.bounds.size.y, areaOfPatrol.bounds.size.z));
+        DropLoot();
     }
-    //private void DamagePlayer()
-    //{
-    //    if (PlayerIsNearly()) healthPlayer.TakeDamage(enemyDamage);
-    //}
+
+    private void DropLoot()
+    {
+        LootManager.Instance.DropLoot(possibleLoots, transform.position);
+    }
 }

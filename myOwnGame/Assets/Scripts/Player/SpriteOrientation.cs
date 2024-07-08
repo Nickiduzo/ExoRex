@@ -18,6 +18,5 @@ public class SpriteOrientation : MonoBehaviour
         {
             currentTransform.localScale = new Vector2(Mathf.Sign(horizontalDirection), currentTransform.localScale.y);
         }
-
     }
 }

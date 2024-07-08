@@ -2,25 +2,13 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] private Animator anim;
     [SerializeField] private Transform shotPos;
     [SerializeField] private GameObject shot;
 
-    public string wheaponShootSound = "Shot";
-
     private float timerToShot;
-    private AudioManager audioManager;
     public void Start()
     {
         timerToShot = 0.5f;
-
-        anim = GetComponent<Animator>();
-
-        audioManager = AudioManager.instance; 
-        if (audioManager == null)
-        {
-            Debug.Log("Wheapon sound not found");
-        }
     }
 
     public void Update()
@@ -29,9 +17,10 @@ public class Weapon : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G) && timerToShot <= 0)
         {
-            Instantiate(shot, shotPos.position, transform.rotation);
-            audioManager.PlaySound(wheaponShootSound);
-            anim.SetTrigger("isShot");
+            GameObject newShot =  Instantiate(shot, shotPos.position, Quaternion.identity);
+            Shot shotScript = newShot.GetComponent<Shot>();
+            float horizontalDirection = Mathf.Sign(transform.localScale.x);
+            shotScript.SetDirection(horizontalDirection);
             timerToShot = 0.3f;
         }
     }

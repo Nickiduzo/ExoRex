@@ -12,8 +12,8 @@ public class WaveSpawner : MonoBehaviour
     private void Start()
     {
         waveTimer = 5;
-        zombie.GetComponent<EnemyPatroller>().leftCorner = leftCorner;
-        zombie.GetComponent<EnemyPatroller>().rightCorner = rigthCorner;
+        //zombie.GetComponent<EnemyPatroller>().leftCorner = leftCorner;
+        //zombie.GetComponent<EnemyPatroller>().rightCorner = rigthCorner;
         zombie.GetComponent<HealthPoints>().death = death;
     }
 

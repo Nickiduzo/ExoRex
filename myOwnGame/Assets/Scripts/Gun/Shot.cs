@@ -5,11 +5,14 @@ public class Shot : MonoBehaviour
     [SerializeField] private Rigidbody2D rigidBody2D;
     private int damage = 40;
     private float speed = 10f;
+    private Vector2 direction = Vector2.right;
+
     private void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
-        rigidBody2D.velocity = transform.right * speed;
-        Destroy(gameObject,5);
+        rigidBody2D.velocity = direction * speed;
+        Destroy(gameObject,2);
+       
     }
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
@@ -24,6 +27,18 @@ public class Shot : MonoBehaviour
         {
             Destroy(gameObject);
             bossHp.TakeDamage(damage);
+        }
+    }
+
+    public void SetDirection(float horizontalDirection)
+    {
+        if(horizontalDirection < 0)
+        {
+            direction = Vector2.left;
+        }
+        else
+        {
+            direction = Vector2.right;
         }
     }
 }

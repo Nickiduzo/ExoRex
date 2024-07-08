@@ -39,8 +39,8 @@ public class HealthPoints : MonoBehaviour
         int settedHealth = currentHealth;
         if (settedHealth - healthValue <= minHealth)
         {
+            HandleDeath();
             settedHealth = minHealth;
-            death.Die();
         }
         else
         {
@@ -48,5 +48,17 @@ public class HealthPoints : MonoBehaviour
         }
 
         ChangeHealth(settedHealth);
+    }
+
+    private void HandleDeath()
+    {
+        if (death != null)
+        {
+            death.Die();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
