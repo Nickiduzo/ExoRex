@@ -15,18 +15,7 @@ public class Shot : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        EnemyBehaviour enemy =  hitInfo.GetComponent<EnemyBehaviour>();
-        BossBehaviour bossHp = hitInfo.GetComponent<BossBehaviour>();
-        if (enemy != null)
-        {
-            Destroy(gameObject);
-            enemy.TakeDamage(damage);
-        }
-        else if (bossHp != null)
-        {
-            Destroy(gameObject);
-            bossHp.TakeDamage(damage);
-        }
+     
     }
 
     public void SetDirection(float horizontalDirection)

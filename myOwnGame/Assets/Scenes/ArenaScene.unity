@@ -1330,6 +1330,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 242556923407738399, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1454995334940619427, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -1374,27 +1378,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1454995334940619431, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454995334940619431, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+      propertyPath: m_GravityScale
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454995334940619431, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454995334940619431, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1454995334940619481, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
       propertyPath: enemyDamage
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1525259346057301791, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1525259346057301791, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8708837155661595854, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
       propertyPath: stopDistance
       value: 0.18
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1454995334940619481, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+    - {fileID: 8708837155661595854, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+    - {fileID: 1118306554396590023, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+    - {fileID: 3523713931666358776, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1454995334940619427, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 559345426}
   m_SourcePrefab: {fileID: 100100000, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+--- !u!1 &559345420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1454995334940619427, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+  m_PrefabInstance: {fileID: 518241338}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &559345426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559345420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26de4a8f4847fbe4c962e72ee4af508e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  patrolSpeed: 2
+  chaseSpeed: 0
+  detectionRange: 4
 --- !u!1 &620066000
 GameObject:
   m_ObjectHideFlags: 0
@@ -13639,9 +13687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f69064f930be824884373c9a93a4adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombie: {fileID: 1454995334940619427, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
-  leftCorner: {fileID: 20211315}
-  rigthCorner: {fileID: 164643455}
 --- !u!4 &1440923041
 Transform:
   m_ObjectHideFlags: 0

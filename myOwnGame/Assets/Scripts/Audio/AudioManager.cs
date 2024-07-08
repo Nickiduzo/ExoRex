@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        Debug.Log("Don't find sound");
+        //Debug.Log("Don't find sound");
     }
 
     public void StopSound(string name)
