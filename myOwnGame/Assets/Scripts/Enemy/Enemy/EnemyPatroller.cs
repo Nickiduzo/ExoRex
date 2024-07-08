@@ -9,6 +9,7 @@ public class EnemyPatroller : MonoBehaviour
     [SerializeField] private float chaseSpeed = 4f;
     [SerializeField] private float idleDuration = 2f;
     [SerializeField] private float detectionRange = 5f;
+    [SerializeField] private float stopDistance = 1f;
 
     [Header("Patrol Boundaries")]
     [SerializeField] private Vector2 leftCornerOffset = new Vector2(-5, 0);
@@ -72,9 +73,21 @@ public class EnemyPatroller : MonoBehaviour
         if (player != null)
         {
             Vector3 direction = (player.position - enemy.position).normalized;
-            enemy.Translate(direction * chaseSpeed * Time.deltaTime);
+            float distance = Vector3.Distance(enemy.position, player.position);
+
+            if (distance > stopDistance)
+            {
+                enemy.Translate(direction * chaseSpeed * Time.deltaTime);
+            }
+
+            // Make the enemy face the player
+            if (direction.x > 0)
+                enemy.localScale = new Vector3(Mathf.Abs(unitScale.x), unitScale.y, unitScale.z);
+            else if (direction.x < 0)
+                enemy.localScale = new Vector3(-Mathf.Abs(unitScale.x), unitScale.y, unitScale.z);
         }
     }
+
     private void CheckForPlayer()
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, detectionRange);
@@ -88,11 +101,13 @@ public class EnemyPatroller : MonoBehaviour
             }
         }
     }
+
     private void StartChasing()
     {
         isChasing = true;
         anim.SetBool("isMoving", true);
     }
+
     private void ChangeDirection()
     {
         anim.SetBool("isMoving", false);
@@ -104,6 +119,7 @@ public class EnemyPatroller : MonoBehaviour
             idleTimer = 0f;
         }
     }
+
     private void MoveInDirection(int direction)
     {
         idleTimer = 0;

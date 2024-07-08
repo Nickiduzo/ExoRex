@@ -6,8 +6,11 @@ public class KnifeArea : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        MovingPlayer player;
-        if (collision.TryGetComponent<MovingPlayer>(out player))
+        PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
             anim.SetTrigger("isAttacking");
+            playerHealth.DecreaseHealth(25);
+        }
     }
 }

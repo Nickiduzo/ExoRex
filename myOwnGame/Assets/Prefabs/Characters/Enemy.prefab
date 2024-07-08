@@ -436,15 +436,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 1.12
-  attackCoolDown: 2
+  attackCooldown: 2
   enemyDamage: 50
-  areaOfPatrol: {fileID: 5056122132830057600}
-  colliderDistance: 0.12
   playerMask:
     serializedVersion: 2
-    m_Bits: 0
-  healthPlayer: {fileID: 3869996865686801344, guid: 562cf692867116144808c1bec2c7de10, type: 3}
-  zombieAttackSound: ZombieAttack
+    m_Bits: 64
+  areaOfPatrol: {fileID: 5056122132830057600}
+  possibleLoots:
+  - lootType: 0
+    minAmount: 1
+    maxAmount: 2
+    dropChance: 15
+  - lootType: 1
+    minAmount: 1
+    maxAmount: 1
+    dropChance: 1
+  - lootType: 2
+    minAmount: 1
+    maxAmount: 5
+    dropChance: 84
 --- !u!61 &5056122132830057600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -502,12 +512,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1f6230398d3a141b56e9dcae8a7158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftCorner: {fileID: 0}
-  rightCorner: {fileID: 0}
-  enemy: {fileID: 1454995334940619428}
-  speed: 1.57
-  idleDuration: 2
   anim: {fileID: 1454995334940619429}
+  enemy: {fileID: 1454995334940619428}
+  patrolSpeed: 1.5
+  chaseSpeed: 2
+  idleDuration: 2
+  detectionRange: 3
+  leftCornerOffset: {x: -4, y: 0}
+  rightCornerOffset: {x: 4, y: 0}
 --- !u!114 &1118306554396590023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +535,7 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 100
   minHealth: 0
-  death: {fileID: 0}
+  death: {fileID: 3523713931666358776}
 --- !u!114 &3523713931666358776
 MonoBehaviour:
   m_ObjectHideFlags: 0

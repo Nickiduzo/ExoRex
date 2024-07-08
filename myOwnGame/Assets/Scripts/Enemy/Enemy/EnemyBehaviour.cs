@@ -3,7 +3,6 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour
 {
     [Header("Enemy Settings")]
-    [SerializeField] private float range = 1.5f;
     [SerializeField] private float attackCooldown = 2f;
     [SerializeField] private int enemyDamage = 30;
     [SerializeField] private LayerMask playerMask;
@@ -11,8 +10,6 @@ public class EnemyBehaviour : MonoBehaviour
     [Header("Components")]
     [SerializeField] private BoxCollider2D areaOfPatrol;
     private Animator anim;
-    private Movement healthPlayer;
-    private EnemyPatroller enemyPatroller;
     private HealthPoints healthPoints;
 
     [Header("Loot Settings")]
@@ -35,7 +32,6 @@ public class EnemyBehaviour : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         healthPoints = GetComponent<HealthPoints>();
-        enemyPatroller = GetComponentInParent<EnemyPatroller>();
     }
 
     private void Update()
@@ -62,5 +58,16 @@ public class EnemyBehaviour : MonoBehaviour
     private void DropLoot()
     {
         LootManager.Instance.DropLoot(possibleLoots, transform.position);
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        PlayerHealth player;
+        if (collision.TryGetComponent<PlayerHealth>(out player))
+        {
+            if (cooldownTimer >= attackCooldown)
+            {
+                cooldownTimer = 0;
+            }
+        }
     }
 }

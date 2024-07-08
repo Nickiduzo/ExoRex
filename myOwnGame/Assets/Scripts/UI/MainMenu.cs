@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,13 +27,13 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void OnMouseSelect()
-    {
-        audioManager.PlaySound(nameSelectSound);
-    }
-
     public void OnMouseClick()
     {
         audioManager.PlaySound(nameClickSound);
+    }
+
+    private void OnMouseEnter()
+    {
+        audioManager.PlaySound(nameSelectSound);     
     }
 }

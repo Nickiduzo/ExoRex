@@ -18,8 +18,8 @@ public class BossBehaviour : MonoBehaviour
     {
         if (colliderPlayerInfo.gameObject.CompareTag("Player"))
         {
-            MovingPlayer playerHealth = colliderPlayerInfo.gameObject.GetComponent<MovingPlayer>();
-            if (playerHealth != null) playerHealth.TakeDamage(bossDamageAttack);
+            //MovingPlayer playerHealth = colliderPlayerInfo.gameObject.GetComponent<MovingPlayer>();
+            //if (playerHealth != null) playerHealth.TakeDamage(bossDamageAttack);
         }
     }
     public void TakeDamage(int value)
