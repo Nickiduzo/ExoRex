@@ -10,9 +10,11 @@ public class HealthPoints : MonoBehaviour
     [SerializeField] private int minHealth = 0;
 
     public Death death;
+    private Animator anim;
     private void Start()
     {
         currentHealth = maxHealth;
+        anim = GetComponent<Animator>();
     }
     private void ChangeHealth(int settedHealth)
     {
@@ -36,20 +38,21 @@ public class HealthPoints : MonoBehaviour
     }
     public void DecreaseHealth(int healthValue)
     {
-        int settedHealth = currentHealth;
-        if (settedHealth - healthValue <= minHealth)
+        TakeDamage(healthValue);
+    }
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        anim.SetTrigger("isTakeDamage");
+        if (currentHealth <= 0)
         {
             HandleDeath();
-            settedHealth = minHealth;
         }
         else
         {
-            settedHealth -= healthValue;
+            ChangeHealth(currentHealth);
         }
-
-        ChangeHealth(settedHealth);
     }
-
     private void HandleDeath()
     {
         if (death != null)

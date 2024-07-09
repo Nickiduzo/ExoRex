@@ -34,7 +34,7 @@ public class PointCounter : MonoBehaviour
             timerToIncrease = 1;
         }
     }
-    public static int ReturnFullScore()
+    public int ReturnFullScore()
     {
         return count;
     }

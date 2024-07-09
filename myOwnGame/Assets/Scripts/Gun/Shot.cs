@@ -15,7 +15,15 @@ public class Shot : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-     
+        if (hitInfo.gameObject.CompareTag("Enemy"))
+        {
+            HealthPoints health = hitInfo.gameObject.GetComponent<HealthPoints>();
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
     }
 
     public void SetDirection(float horizontalDirection)

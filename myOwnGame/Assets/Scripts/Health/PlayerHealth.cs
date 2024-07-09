@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     private int maxValue = 100;
     private int currentValue;
 
+    public event Action OnPlayerDeath;
     private void Start()
     {
         currentValue = maxValue;
@@ -20,12 +22,12 @@ public class PlayerHealth : MonoBehaviour
         if(currentValue - decreaseValue < minValue)
         {
             currentValue = minValue;
+            OnPlayerDeath?.Invoke();
         }
         else
         {
             currentValue -= decreaseValue;
         }
-        //Debug.Log(currentValue);
         UpdateHealthSlider();
     }
 
