@@ -61,7 +61,7 @@ public class HealthPoints : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

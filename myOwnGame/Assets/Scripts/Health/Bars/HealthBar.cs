@@ -24,5 +24,8 @@ public class HealthBar : MonoBehaviour
 
         slider.value = settedValue;
     }
-    public void DestroyHealthBar() => Destroy(gameObject);
+    public void DestroyHealthBar()
+    {
+        SetHealthBarValue(100);
+    }
 }
