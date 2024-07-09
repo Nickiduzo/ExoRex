@@ -32,8 +32,8 @@ public class MainMenu : MonoBehaviour
         audioManager.PlaySound(nameClickSound);
     }
 
-    private void OnMouseEnter()
+    public void OnMouseSelect()
     {
-        audioManager.PlaySound(nameSelectSound);     
+        audioManager.PlaySound(nameSelectSound);
     }
 }
