@@ -16,7 +16,6 @@ public class PlayerHealth : MonoBehaviour
         currentValue = maxValue;
         UpdateHealthSlider();
     }
-
     public void DecreaseHealth(int decreaseValue)
     {
         if(currentValue - decreaseValue < minValue)

@@ -8,11 +8,9 @@ public class PointCounter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textPro;
     
     private static int count;
-    private float timerToIncrease;
     private void Start()
     {
         count = 0;
-        timerToIncrease = 1;
         textPro = GetComponent<TextMeshProUGUI>();
     }
     private void Awake()
@@ -21,17 +19,16 @@ public class PointCounter : MonoBehaviour
     }
     private void Update()
     {
-        if(timerToIncrease != 0)
-            timerToIncrease -= Time.deltaTime;
-
         textPro.text = count.ToString();
     }
-    public void UpdateKillCount(int score)
+    public void UpdateKillCount(EnemyType type)
     {
-        if (timerToIncrease <= 0)
+        switch (type)
         {
-            count += score;
-            timerToIncrease = 1;
+            case EnemyType.Enemy: count++; 
+                break;
+            case EnemyType.RexBoss: count += 3;
+                break;
         }
     }
     public int ReturnFullScore()

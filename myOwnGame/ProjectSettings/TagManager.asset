@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Shot
   - posShot
+  - RexEnemy
   layers:
   - Default
   - TransparentFX

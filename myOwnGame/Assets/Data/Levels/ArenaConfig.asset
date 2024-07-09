@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ArenaConfig
   m_EditorClassIdentifier: 
   maxEnemies: 20
-  enemyPrefab: {fileID: 1454995334940619427, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}
+  enemyPrefab: {fileID: 8997117975795389779, guid: 98b6a1807cedbab42801d641f8556e83, type: 3}

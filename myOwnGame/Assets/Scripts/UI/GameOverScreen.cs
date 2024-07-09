@@ -53,12 +53,15 @@ public class GameOverScreen : MonoBehaviour
     public void RestartButton()
     {
         Time.timeScale = 1f;
+        DeactivateEvent();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    private void DeactivateEvent() => player.OnPlayerDeath -= HandlePlayerDeath;    
     public void ExitButton()
     {
         Time.timeScale = 1f;
+        DeactivateEvent();
         SceneManager.LoadScene(0);
     }
 }

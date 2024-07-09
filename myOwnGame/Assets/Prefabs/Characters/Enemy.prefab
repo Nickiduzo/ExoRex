@@ -481,9 +481,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26de4a8f4847fbe4c962e72ee4af508e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpeed: 0.97
-  chaseSpeed: 1.2
-  detectionRange: 3.16
+  patrolSpeed: 0.8
+  chaseSpeed: 1
+  detectionRange: 3
 --- !u!114 &8484089038832095679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,7 +498,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 100
-  minHealth: 0
   death: {fileID: 2839454637844510464}
 --- !u!114 &2839454637844510464
 MonoBehaviour:

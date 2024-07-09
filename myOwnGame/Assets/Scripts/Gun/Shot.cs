@@ -24,6 +24,15 @@ public class Shot : MonoBehaviour
             }
             Destroy(gameObject);
         }
+        else if (hitInfo.gameObject.CompareTag("RexEnemy"))
+        {
+            HealthPoints health = hitInfo.gameObject.GetComponent<HealthPoints>();
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
     }
 
     public void SetDirection(float horizontalDirection)

@@ -5,13 +5,13 @@ public class EnemyKnife : MonoBehaviour
 {
     [SerializeField] private int damageToPlayer = 20;
     [SerializeField] private float attackCooldown = 1.5f;
-    [SerializeField] private Animator anim;
+    [SerializeField] protected Animator anim;
 
-    private Transform player;
-    private bool canAttack = true;
+    protected Transform player;
+    protected bool canAttack = true;
     private Collider2D attackCollider;
 
-    private void Start()
+    protected virtual void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         attackCollider = GetComponent<Collider2D>();
@@ -37,7 +37,7 @@ public class EnemyKnife : MonoBehaviour
         }
     }
 
-    private void AttackPlayer()
+    protected virtual void AttackPlayer()
     {
         anim.SetTrigger("isAttacking");
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
@@ -48,7 +48,7 @@ public class EnemyKnife : MonoBehaviour
         StartCoroutine(AttackCooldown());
     }
 
-    private IEnumerator AttackCooldown()
+    protected virtual IEnumerator AttackCooldown()
     {
         canAttack = false;
         yield return new WaitForSeconds(attackCooldown);

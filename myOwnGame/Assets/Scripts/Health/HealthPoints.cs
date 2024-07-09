@@ -7,7 +7,7 @@ public class HealthPoints : MonoBehaviour
 
     [SerializeField] private int currentHealth;
     [SerializeField] private int maxHealth = 100;
-    [SerializeField] private int minHealth = 0;
+    //[SerializeField] private int minHealth = 0;
 
     public Death death;
     private Animator anim;
@@ -61,7 +61,7 @@ public class HealthPoints : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

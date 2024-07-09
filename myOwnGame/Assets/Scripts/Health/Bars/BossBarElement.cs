@@ -13,7 +13,6 @@ public class BossBarElement : MonoBehaviour
     public void OnDestroy()
     {
         gameObject.SetActive(false);
-        pointCounter.UpdateKillCount(10);
     }
     public void SetMainValue(float value) => slider.value = slider.value - value;
 }
