@@ -111,6 +111,11 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void SetSpeeds(float newPatrolSpeed, float newChaseSpeed)
+    {
+        this.patrolSpeed = newPatrolSpeed;
+        this.chaseSpeed = newChaseSpeed;
+    }
     private void Flip()
     {
         Vector3 localScale = transform.localScale;

@@ -1,34 +1,18 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChangeMode : MonoBehaviour
 {
-    public static ChangeMode instance;
+    [SerializeField] private ArenaConfig arenaConfig;
     
-    [HideInInspector] public int difficulty;
-
-    private void Awake()
+    private void Update()
     {
-        instance = this;
+        Debug.Log(arenaConfig.PrintCurrentMode());
     }
 
-    public void SaveDifficult()
-    {
-        PlayerPrefs.SetInt("Difficulty", difficulty);
-        PlayerPrefs.Save();
-        Debug.Log("Difficult: " + difficulty);
-    }
-    public void SwitchLowMode()
-    {
-        difficulty = 150;
-    }
-   
-    public void SwitchMediumMode()
-    {
-        difficulty = 100;
-    }
+    public void SetLightMode() => arenaConfig.ChooseMode(ArenaDifficulty.Light);
 
-    public void SwitchHighMode()
-    {
-        difficulty = 50;
-    }
+    public void SetMediumMode() => arenaConfig.ChooseMode(ArenaDifficulty.Medium);
+
+    public void SetHardMode() => arenaConfig.ChooseMode(ArenaDifficulty.Hard);
 }

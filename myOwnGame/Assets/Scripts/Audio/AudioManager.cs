@@ -2,27 +2,34 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance;
+    public static AudioManager Instance;
 
     public Sound[] sounds;
 
     private void Awake()
     {
-        instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            InitializeSounds();
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
 
-    private void Start()
+    private void InitializeSounds()
     {
         for (int i = 0; i < sounds.Length; i++)
         {
-            GameObject gameObject = new GameObject("Sound" + i + " " + sounds[i].nameSound);
-
-            sounds[i].SetSource(gameObject.AddComponent<AudioSource>());
-
+            GameObject soundGameObject = new GameObject("Sound" + i + " " + sounds[i].nameSound);
+            soundGameObject.transform.SetParent(this.transform);
+            sounds[i].SetSource(soundGameObject.AddComponent<AudioSource>());
         }
         PlaySound("Music");
     }
-
     private void Update()
     {
         if (Time.time > 30f)

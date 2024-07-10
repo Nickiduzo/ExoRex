@@ -20,7 +20,7 @@ public class JumpAbility : MonoBehaviour
     }
     private void Start()
     {
-        audioManager = AudioManager.instance;
+        audioManager = AudioManager.Instance;
     }
 
     private void FixedUpdate()

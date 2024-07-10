@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     private AudioManager audioManager;
     private void Start()
     {
-        audioManager = AudioManager.instance;
+        audioManager = AudioManager.Instance;
         if (audioManager == null)
         {
             Debug.Log("No audiomanager found!");

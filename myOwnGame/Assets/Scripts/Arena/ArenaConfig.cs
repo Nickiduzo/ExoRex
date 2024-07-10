@@ -1,18 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ArenaConfig : MonoBehaviour
+[CreateAssetMenu(fileName ="ArenaConfig", menuName ="ArenaConfig")]
+public class ArenaConfig : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ArenaMode LightMode;
+    public ArenaMode MediumMode;
+    public ArenaMode HardMode;
+    
+    public ArenaDifficulty currentDifficulty;
+    public ArenaMode currentMode;
 
-    // Update is called once per frame
-    void Update()
+    public void ChooseMode(ArenaDifficulty difficult)
     {
-        
+        currentDifficulty = difficult;
+        switch (difficult)
+        {
+            case ArenaDifficulty.Light:
+                currentMode = LightMode;
+                break;
+            case ArenaDifficulty.Medium:
+                currentMode = MediumMode;
+                break;
+            case ArenaDifficulty.Hard:
+                currentMode = HardMode;
+                break;
+            default: currentMode = LightMode;
+                break;
+        }
+    }
+    public string PrintCurrentMode()
+    {
+        switch (currentDifficulty)
+        {
+            case ArenaDifficulty.Light:
+                return "Light";
+            case ArenaDifficulty.Medium:
+                return "Medium";
+            case ArenaDifficulty.Hard:
+                return "Hard";
+        }
+        return "NoMode";
     }
 }

@@ -37,7 +37,11 @@ public class RexEnemy : Enemy
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
-
+    public new void SetSpeeds(float newPatrolSpeed, float newChaseSpeed)
+    {
+        this.patrolSpeed = newPatrolSpeed;
+        this.chaseSpeed = newChaseSpeed;
+    }
     protected override void ChasePlayer()
     {
         // Override the ChasePlayer method if necessary

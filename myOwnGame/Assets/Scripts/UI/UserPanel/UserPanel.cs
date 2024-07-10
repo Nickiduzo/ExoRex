@@ -22,7 +22,7 @@ public class UserPanel : MonoBehaviour
 
     private void Awake()
     {
-        audioManager = AudioManager.instance;
+        audioManager = AudioManager.Instance;
         if (audioManager == null)
         {
             Debug.Log("No audiomanager found!");

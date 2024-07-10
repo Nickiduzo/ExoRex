@@ -818,11 +818,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316822ec837df854ea8a0f48485c5ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpeed: 1.2
-  chaseSpeed: 1.6
+  patrolSpeed: 1
+  chaseSpeed: 1.2
   detectionRange: 4
   jumpForce: 10
-  jumpCooldown: 2.44
+  jumpCooldown: 2.5
 --- !u!114 &4688629972404336068
 MonoBehaviour:
   m_ObjectHideFlags: 0
