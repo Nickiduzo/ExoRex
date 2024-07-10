@@ -8,7 +8,7 @@ public class GameOverScreen : MonoBehaviour
     [SerializeField] private PlayerHealth player;
     [SerializeField] private PointCounter gameCounter;
     [SerializeField] private TextMeshProUGUI resultCounter;
-    
+
     private void Start()
     {
         ActivatePanels();

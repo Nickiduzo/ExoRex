@@ -14,18 +14,11 @@ public class ItemPickup : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        float pickupRadius = 0.2f;
-        float playerX = player.transform.position.x;
-        float itemX = gameObject.transform.position.x;
-
-        if (Mathf.Abs(playerX - itemX) <= pickupRadius)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                PickUp();
-            }
+            PickUp();
         }
     }
 }

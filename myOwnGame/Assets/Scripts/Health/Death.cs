@@ -10,6 +10,7 @@ public class Death : MonoBehaviour
     {
         PointCounter.Instanse.UpdateKillCount(enemyType);
         OnDieActivate?.Invoke();
+        InventoryManager.Instance.DropLoot(enemyType, transform.position);
         EffectManager.Instance.PlayDeathEffect(EnemyType.Enemy, transform.position);
         Destroy(gameObject);
     }

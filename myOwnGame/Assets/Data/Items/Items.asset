@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1e4aaee2955b54499f42243c2ae0ba, type: 3}
+  m_Name: Items
+  m_EditorClassIdentifier: 
+  shopInventory: {fileID: 1850737777108675551, guid: 0faea7dc8d77f264ea41bc23f2aec43d, type: 3}
+  Aderit: {fileID: 11400000, guid: d4a6b4a97b1800b459dfbbce0154a8fb, type: 2}
+  Ederium: {fileID: 11400000, guid: e70629b078e0ceb46804106605601b8b, type: 2}
+  Titanium: {fileID: 11400000, guid: 92e5eb9457f8dda49b658b03ed262ff6, type: 2}
