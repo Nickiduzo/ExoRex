@@ -6,7 +6,8 @@ public class PointCounter : MonoBehaviour
     public static PointCounter Instanse { get ; private set; }
     
     [SerializeField] private TextMeshProUGUI textPro;
-    
+    [SerializeField] private ArenaConfig arenaConfig;
+
     private static int count;
     private void Start()
     {
@@ -34,5 +35,17 @@ public class PointCounter : MonoBehaviour
     public int ReturnFullScore()
     {
         return count;
+    }
+
+    private void OnDisable()
+    {
+        SetHighScore();
+    }
+    public void SetHighScore()
+    {
+        if (count > arenaConfig.highScore)
+        {
+            arenaConfig.highScore = count;
+        }
     }
 }

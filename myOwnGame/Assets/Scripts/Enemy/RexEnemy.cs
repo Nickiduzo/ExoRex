@@ -6,6 +6,7 @@ public class RexEnemy : Enemy
     [SerializeField] private float jumpCooldown = 2f;
     private float jumpTimer = 0f;
 
+    public static event System.Action OnBossDestroyed;
     protected override void Start()
     {
         base.Start();
@@ -44,10 +45,7 @@ public class RexEnemy : Enemy
     }
     protected override void ChasePlayer()
     {
-        // Override the ChasePlayer method if necessary
-        // For RexEnemy, you might want to implement different chasing behavior
         base.ChasePlayer();
-        // Additional or modified chasing logic specific to RexEnemy
     }
 
     protected void OnDestroy()
@@ -55,5 +53,11 @@ public class RexEnemy : Enemy
         NotifyBossDestroyed();
     }
 
-    private void NotifyBossDestroyed() => EnemySpawner.Instance.BossDestroyed();
+    private void NotifyBossDestroyed()
+    {
+        if (OnBossDestroyed != null)
+        {
+            OnBossDestroyed?.Invoke();
+        }
+    }
 }

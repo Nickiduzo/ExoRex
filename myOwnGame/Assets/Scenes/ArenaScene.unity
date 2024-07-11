@@ -16182,6 +16182,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1563729832}
     m_Modifications:
+    - target: {fileID: 386929439334191378, guid: 656fa392961b08a49bb76029f8f67106, type: 3}
+      propertyPath: arenaConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: f78c76890a933764aaec64dd57c2aabf, type: 2}
     - target: {fileID: 2407164493828734624, guid: 656fa392961b08a49bb76029f8f67106, type: 3}
       propertyPath: m_Name
       value: Counter

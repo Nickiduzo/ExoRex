@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public static EnemySpawner Instance { get; private set; }
-
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private GameObject rexPrefab;
     [SerializeField] private PointCounter counter;
@@ -20,16 +18,7 @@ public class EnemySpawner : MonoBehaviour
     private bool bossSpawned = false;
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            InitializeSpawner();
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        InitializeSpawner();
     }
     private void InitializeSpawner()
     {
@@ -38,29 +27,14 @@ public class EnemySpawner : MonoBehaviour
         delay = currentMode.spawnDelay;
         InvokeRepeating("SpawnEnemy", startDelay, delay);
     }
-
-    private void OnDestroy()
-    {
-        CancelInvoke("SpawnEnemy");
-    }
-
     private void OnEnable()
     {
-        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+        RexEnemy.OnBossDestroyed += BossDestroyed;
     }
 
     private void OnDisable()
     {
-        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
-    {
-        if (Instance != this)
-        {
-            CancelInvoke("SpawnEnemy");
-            Destroy(gameObject);
-        }
+        RexEnemy.OnBossDestroyed -= BossDestroyed;
     }
     private void SpawnEnemy()
     {

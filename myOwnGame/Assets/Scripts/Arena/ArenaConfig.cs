@@ -10,6 +10,7 @@ public class ArenaConfig : ScriptableObject
     public ArenaDifficulty currentDifficulty;
     public ArenaMode currentMode;
 
+    public int highScore;
     public void ChooseMode(ArenaDifficulty difficult)
     {
         currentDifficulty = difficult;
