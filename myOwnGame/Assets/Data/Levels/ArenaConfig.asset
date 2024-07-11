@@ -33,12 +33,12 @@ MonoBehaviour:
     chaseSpeed: 2
     bossPatrolSpeed: 1.4
     bossChaseSpeed: 1.6
-  currentDifficulty: 0
+  currentDifficulty: 1
   currentMode:
-    startDelay: 3
-    spawnDelay: 2.8
-    patrolSpeed: 0.8
-    chaseSpeed: 1
-    bossPatrolSpeed: 1
-    bossChaseSpeed: 1.2
+    startDelay: 2.8
+    spawnDelay: 2.4
+    patrolSpeed: 1.2
+    chaseSpeed: 1.4
+    bossPatrolSpeed: 1.2
+    bossChaseSpeed: 1.4
   highScore: 0

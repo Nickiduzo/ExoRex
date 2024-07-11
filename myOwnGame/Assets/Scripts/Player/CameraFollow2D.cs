@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraFollow2D : MonoBehaviour
 {
-    [SerializeField] private GameObject followObject;
+    [SerializeField] private Transform followObject;
     [SerializeField] private float offSet;
 
     [SerializeField] private float upperLimit;

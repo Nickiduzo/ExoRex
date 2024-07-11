@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class AudioManager : MonoBehaviour
 
     public Sound[] sounds;
 
+    private string currentMusic = "Music";
     private void Awake()
     {
         if (Instance == null)
@@ -27,14 +29,6 @@ public class AudioManager : MonoBehaviour
             GameObject soundGameObject = new GameObject("Sound" + i + " " + sounds[i].nameSound);
             soundGameObject.transform.SetParent(this.transform);
             sounds[i].SetSource(soundGameObject.AddComponent<AudioSource>());
-        }
-        PlaySound("Music");
-    }
-    private void Update()
-    {
-        if (Time.time > 30f)
-        {
-            StopSound("Music");
         }
     }
 
@@ -62,5 +56,30 @@ public class AudioManager : MonoBehaviour
                 return;
             }
         }
+    }
+    private void ChangeMusicForCurrentScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        int sceneIndex = currentScene.buildIndex;
+
+        switch (sceneIndex)
+        {
+            case 0:
+                ChangeMusic("MenuMusic");
+                break;
+            case 1:
+                ChangeMusic("ArenaMusic");
+                break;
+            default:
+                ChangeMusic("MenuMusic");
+                break;
+        }
+    }
+
+    private void ChangeMusic(string newMusic)
+    {
+        StopSound(currentMusic);
+        currentMusic = newMusic;
+        PlaySound(newMusic);
     }
 }

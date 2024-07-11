@@ -17,26 +17,13 @@ public class EnemyKnife : MonoBehaviour
         attackCollider = GetComponent<Collider2D>();
     }
 
-    private void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        CheckForPlayerInAttackRange();
-    }
-
-    private void CheckForPlayerInAttackRange()
-    {
-        if (player == null) return;
-
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(attackCollider.bounds.center, attackCollider.bounds.size, 0);
-        foreach (Collider2D collider in colliders)
+        if (collision.gameObject.CompareTag("Player") && canAttack)
         {
-            if (collider.CompareTag("Player") && canAttack)
-            {
-                AttackPlayer();
-                break;
-            }
+            AttackPlayer();
         }
     }
-
     protected virtual void AttackPlayer()
     {
         anim.SetTrigger("isAttacking");
@@ -54,16 +41,9 @@ public class EnemyKnife : MonoBehaviour
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
     }
-
     private void OnDrawGizmos()
     {
-        if (attackCollider == null)
-            attackCollider = GetComponent<Collider2D>();
-
-        if (attackCollider != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireCube(attackCollider.bounds.center, attackCollider.bounds.size);
-        }
+        Gizmos.color = Color.blue;
+        Gizmos.DrawSphere(gameObject.transform.position, 0.1f);
     }
 }
