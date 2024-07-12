@@ -9,4 +9,5 @@ public class ItemsConfig : ScriptableObject
     public Item Aderit;
     public Item Ederium;
     public Item Titanium;
+    public Item Nexit;
 }

@@ -4,5 +4,6 @@ public enum ItemType
 {
     Ederium,
     Titanium,
-    Aderit
+    Aderit,
+    Nexit
 }

@@ -5,32 +5,90 @@ using UnityEngine.UI;
 
 public class ShopPanel : MonoBehaviour
 {
-    public List<Item> items = new List<Item>();
-    public Transform ItemContent; // where will be show items
-    public GameObject InventoryItem; // how will be show items
     public ItemsConfig config;
 
-    private void Start()
+    [SerializeField] private GameObject[] panels;
+
+    [SerializeField] private TextMeshProUGUI aderit;
+    [SerializeField] private TextMeshProUGUI ederium;
+    [SerializeField] private TextMeshProUGUI titanium;
+
+    private void OnEnable()
     {
-        ListItems();
+        InitializeComponents();
     }
-    public void ListItems()
+
+    private void InitializeComponents()
     {
-        foreach (Transform item in ItemContent)
+        aderit.text = config.Aderit.amount.ToString();
+        ederium.text = config.Ederium.amount.ToString();
+        titanium.text = config.Titanium.amount.ToString();
+    }
+    private void HideElements(string panelName)
+    {
+        foreach (GameObject panel in panels)
         {
-            Destroy(item.gameObject);
+            if (panel.gameObject.name != panelName)
+            {
+                panel.SetActive(false);
+            }
+            else if (panel.gameObject.name == panelName)
+            {
+                if (!panel.activeInHierarchy)
+                {
+                    panel.SetActive(true);
+                }
+            }
         }
+    }
 
-        foreach (var item in items)
+    public void SwitchPanel(string panelName)
+    {
+        HideElements(panelName);
+    }
+
+    public void GetEderium()
+    {
+        if (config.Aderit.amount - 100 > 0)
         {
-            GameObject material = Instantiate(InventoryItem, ItemContent);
-            var itemNameText = material.transform.Find("ItemName").GetComponent<TextMeshProUGUI>();
-            var itemIcon = material.transform.Find("ItemIcon").GetComponent<Image>();
-            var itemAmount = material.transform.Find("Amount").GetComponent<TextMeshProUGUI>();
-
-            itemNameText.text = item.itemName;
-            itemIcon.sprite = item.icon;
-            itemAmount.text = item.amount.ToString();
+            config.Aderit.amount -= 100;
+            config.Ederium.amount += 1;
+            InitializeComponents();
         }
+    }
+
+    public void GetAderit()
+    {
+        if (config.Ederium.amount - 1 > 0)
+        {
+            config.Ederium.amount -= 1;
+            config.Aderit.amount += 100;
+            InitializeComponents();
+        }
+    }
+    public void GetTitanium()
+    {
+        if (config.Ederium.amount - 100 > 0)
+        {
+            config.Ederium.amount -= 100;
+            config.Titanium.amount += 1;
+            InitializeComponents();
+        }
+    }
+    public void GetNexit()
+    {
+        if (IsNexit())
+        {
+            config.Aderit.amount -= 25;
+            config.Ederium.amount -= 15;
+            config.Titanium.amount -= 10;
+            config.Nexit.amount += 1;
+            InitializeComponents();
+        }
+    }
+
+    private bool IsNexit()
+    {
+        return (config.Aderit.amount > 25 && config.Ederium.amount > 15 && config.Titanium.amount > 10);
     }
 }

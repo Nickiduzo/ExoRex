@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   itemName: Ederium
-  amount: 0
+  amount: 19016
   icon: {fileID: 1400982522, guid: b1c75e204e4efa54da86479a379f2752, type: 3}
   minAmount: 1
   maxAmount: 3
