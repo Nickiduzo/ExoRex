@@ -12,6 +12,9 @@ public class ShopPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI aderit;
     [SerializeField] private TextMeshProUGUI ederium;
     [SerializeField] private TextMeshProUGUI titanium;
+    [SerializeField] private TextMeshProUGUI quartex;
+    [SerializeField] private TextMeshProUGUI nexit;
+    [SerializeField] private TextMeshProUGUI novacite;
 
     private void OnEnable()
     {
@@ -20,9 +23,13 @@ public class ShopPanel : MonoBehaviour
 
     private void InitializeComponents()
     {
+        config.ConvertCurrency();
         aderit.text = config.Aderit.amount.ToString();
         ederium.text = config.Ederium.amount.ToString();
         titanium.text = config.Titanium.amount.ToString();
+        quartex.text = config.Quartex.amount.ToString();
+        nexit.text = config.Nexit.amount.ToString();
+        novacite.text = config.Novacite.amount.ToString();
     }
     private void HideElements(string panelName)
     {

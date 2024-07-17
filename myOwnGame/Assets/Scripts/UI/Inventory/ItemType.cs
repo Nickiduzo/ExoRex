@@ -5,5 +5,7 @@ public enum ItemType
     Ederium,
     Titanium,
     Aderit,
-    Nexit
+    Quartex,
+    Nexit,
+    Novacite
 }
