@@ -21,7 +21,7 @@ public class ShopPanel : MonoBehaviour
         InitializeComponents();
     }
 
-    private void InitializeComponents()
+    public void InitializeComponents()
     {
         config.ConvertCurrency();
         aderit.text = config.Aderit.amount.ToString();

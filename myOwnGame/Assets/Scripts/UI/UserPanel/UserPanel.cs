@@ -36,7 +36,6 @@ public class UserPanel : MonoBehaviour
             onShowHUD.Invoke();
             DefaultSpriteButton();
             ChangeButtonSprite(0);
-            InventoryManager.Instance.ListItems();
             SwitchPanel("Inventory");
         }
         else if (Input.GetKeyDown(KeyCode.U))
