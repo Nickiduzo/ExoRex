@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,9 @@ public class MainMenu : MonoBehaviour
 {
     public string nameSelectSound = "Select";
     public string nameClickSound = "Click";
+
+    [SerializeField] private Token token;
+    [SerializeField] private ArenaConfig arenaConfig;
 
     private AudioManager audioManager;
     private void Start()
@@ -17,9 +21,13 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    public void LoadScene(int sceneIndex)
+    public void LaunchArena(int tokenAmount)
     {
-        SceneManager.LoadScene(sceneIndex);
+        if (token.amount >= tokenAmount)
+        {
+            token.amount -= tokenAmount;
+            SceneManager.LoadScene(1);
+        }
     }
 
     public void ExitGame()
@@ -36,4 +44,5 @@ public class MainMenu : MonoBehaviour
     {
         audioManager.PlaySound(nameSelectSound);
     }
+
 }

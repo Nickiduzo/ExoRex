@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   itemName: Aderit
-  amount: 40
+  amount: 0
   icon: {fileID: -106796036, guid: b1c75e204e4efa54da86479a379f2752, type: 3}
   minAmount: 2
   maxAmount: 5

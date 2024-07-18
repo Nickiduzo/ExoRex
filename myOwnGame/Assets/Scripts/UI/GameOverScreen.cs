@@ -9,6 +9,9 @@ public class GameOverScreen : MonoBehaviour
     [SerializeField] private PointCounter gameCounter;
     [SerializeField] private TextMeshProUGUI resultCounter;
 
+    [SerializeField] private Token token;
+    [SerializeField] private ArenaConfig arenaConfig;
+
     private void Start()
     {
         ActivatePanels();
@@ -52,10 +55,30 @@ public class GameOverScreen : MonoBehaviour
     }
     public void RestartButton()
     {
-        Time.timeScale = 1f;
-        DeactivateEvent();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        int requiredTokens = 0;
+
+        switch (arenaConfig.currentDifficulty)
+        {
+            case ArenaDifficulty.Light:
+                requiredTokens = 1;
+                break;
+            case ArenaDifficulty.Medium:
+                requiredTokens = 2;
+                break;
+            case ArenaDifficulty.Hard:
+                requiredTokens = 3;
+                break;
+        }
+
+        if (token.amount >= requiredTokens)
+        {
+            token.amount -= requiredTokens;
+            Time.timeScale = 1f;
+            DeactivateEvent();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
+
 
     private void DeactivateEvent() => player.OnPlayerDeath -= HandlePlayerDeath;    
     public void ExitButton()

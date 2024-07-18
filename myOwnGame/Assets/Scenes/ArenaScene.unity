@@ -14644,6 +14644,8 @@ MonoBehaviour:
   player: {fileID: 281180346}
   gameCounter: {fileID: 1056046719}
   resultCounter: {fileID: 98915908}
+  token: {fileID: 11400000, guid: c8649672f88d68f4cb91be8c639d1c5c, type: 2}
+  arenaConfig: {fileID: 11400000, guid: f78c76890a933764aaec64dd57c2aabf, type: 2}
 --- !u!1 &1520421333
 GameObject:
   m_ObjectHideFlags: 0
