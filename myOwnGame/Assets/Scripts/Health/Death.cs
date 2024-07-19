@@ -12,6 +12,7 @@ public class Death : MonoBehaviour
         OnDieActivate?.Invoke();
         InventoryManager.Instance.DropLoot(enemyType, transform.position);
         EffectManager.Instance.PlayDeathEffect(EnemyType.Enemy, transform.position);
+        LevelSystem.instance.AddExperience(50);
         Destroy(gameObject);
     }
 }

@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
     public Transform ItemContent;
     public GameObject InventoryItem;
     public ItemsConfig itemsConfig;
+    public RecepsManager recepsManager;
 
     public GameObject[] loots;
     #region Singleton
@@ -35,6 +36,10 @@ public class InventoryManager : MonoBehaviour
         if (!itemExists) items.Add(item);
     }
 
+    public void CollectRecep(Recipe recipe)
+    {
+        recepsManager.recipes.Add(recipe);
+    }
     public void RemoveItem(Item item)
     {
         items.Remove(item);
@@ -93,7 +98,8 @@ public class InventoryManager : MonoBehaviour
         {
             for (int i = 0; i < titaniumAmount; i++)
             {
-                ThrowLootWithForce(loots[2], position, 0.2f, Random.Range(-15f, 15f));
+                itemsConfig.Titanium.amount++;
+                //ThrowLootWithForce(loots[2], position, 0.2f, Random.Range(-15f, 15f));
             }
             return;
         }
@@ -101,7 +107,8 @@ public class InventoryManager : MonoBehaviour
         {
             for (int i = 0; i < ederiumAmount; i++)
             {
-                ThrowLootWithForce(loots[1], position, 0.2f, Random.Range(-15f, 15f));
+                itemsConfig.Ederium.amount++;
+                //ThrowLootWithForce(loots[1], position, 0.2f, Random.Range(-15f, 15f));
             }
             return;
         }
@@ -109,7 +116,8 @@ public class InventoryManager : MonoBehaviour
         {
             for (int i = 0; i < aderitAmount; i++)
             {
-                ThrowLootWithForce(loots[0], position, 0.2f, Random.Range(-15f, 15f));
+                itemsConfig.Aderit.amount++;
+                //ThrowLootWithForce(loots[0], position, 0.2f, Random.Range(-15f, 15f));
             }
             return;
         }
@@ -126,7 +134,8 @@ public class InventoryManager : MonoBehaviour
         {
             for (int i = 0; i < titaniumAmount; i++)
             {
-                ThrowLootWithForce(loots[2], position, 0.2f, Random.Range(-15f, 15f));
+                itemsConfig.Titanium.amount++;
+                //ThrowLootWithForce(loots[2], position, 0.2f, Random.Range(-15f, 15f));
             }
             return;
         }
@@ -134,7 +143,8 @@ public class InventoryManager : MonoBehaviour
         {
             for (int i = 0; i < ederiumAmount; i++)
             {
-                ThrowLootWithForce(loots[1], position, 0.2f, Random.Range(-15f, 15f));
+                itemsConfig.Ederium.amount++;
+                //ThrowLootWithForce(loots[1], position, 0.2f, Random.Range(-15f, 15f));
             }
             return;
         }
@@ -149,28 +159,27 @@ public class InventoryManager : MonoBehaviour
     {
 
     }
-    private void ThrowLootWithForce(GameObject lootPrefab, Vector3 position, float force, float angle)
-    {
-        // Instantiate the loot at the given position
-        GameObject lootInstance = Instantiate(lootPrefab, position, Quaternion.identity);
+    //private void ThrowLootWithForce(GameObject lootPrefab, Vector3 position, float force, float angle)
+    //{
+    //    // Instantiate the loot at the given position
+    //    GameObject lootInstance = Instantiate(lootPrefab, position, Quaternion.identity);
 
-        // Get the Rigidbody2D component attached to the instantiated loot
-        Rigidbody2D rb = lootInstance.GetComponent<Rigidbody2D>();
+    //    // Get the Rigidbody2D component attached to the instantiated loot
+    //    Rigidbody2D rb = lootInstance.GetComponent<Rigidbody2D>();
 
-        // Check if the Rigidbody2D component exists
-        if (rb != null)
-        {
-            // Calculate the direction based on the angle
-            float radians = angle * Mathf.Deg2Rad;
-            Vector2 direction = new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
+    //    // Check if the Rigidbody2D component exists
+    //    if (rb != null)
+    //    {
+    //        // Calculate the direction based on the angle
+    //        float radians = angle * Mathf.Deg2Rad;
+    //        Vector2 direction = new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
 
-            // Apply force to the Rigidbody2D in the calculated direction
-            rb.AddForce(direction * force, ForceMode2D.Impulse);
-        }
-        else
-        {
-            Debug.LogWarning("The loot prefab does not have a Rigidbody2D component.");
-        }
-    }
-
+    //        // Apply force to the Rigidbody2D in the calculated direction
+    //        rb.AddForce(direction * force, ForceMode2D.Impulse);
+    //    }
+    //    else
+    //    {
+    //        Debug.LogWarning("The loot prefab does not have a Rigidbody2D component.");
+    //    }
+    //}
 }
