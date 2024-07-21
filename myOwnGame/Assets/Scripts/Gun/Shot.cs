@@ -11,7 +11,7 @@ public class Shot : MonoBehaviour
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
         rigidBody2D.velocity = direction * speed;
-        Destroy(gameObject,1.5f);
+        Destroy(gameObject,1.2f);
     }
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {

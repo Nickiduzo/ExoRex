@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G) && timerToShot <= 0)
         {
+            AudioManager.Instance.PlaySound("PistolShot");
             GameObject newShot =  Instantiate(shot, shotPos.position, Quaternion.identity);
             Shot shotScript = newShot.GetComponent<Shot>();
             float horizontalDirection = Mathf.Sign(transform.localScale.x);

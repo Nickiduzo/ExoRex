@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 
-[Serializable]
-public class Sound
+[CreateAssetMenu(fileName ="Song", menuName = "ScriptableObjects/Song", order = 2)]
+public class Sound : ScriptableObject
 {
     public string nameSound;
 
@@ -14,7 +14,7 @@ public class Sound
     public bool loop = false;
 
     public AudioClip clip;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     public void SetSource(AudioSource source)
     {

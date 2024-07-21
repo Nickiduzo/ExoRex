@@ -5,9 +5,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
-    public Sound[] sounds;
-
-    private string currentMusic = "Music";
+    public SoundManager soundsConfig;
     private void Awake()
     {
         if (Instance == null)
@@ -24,62 +22,60 @@ public class AudioManager : MonoBehaviour
 
     private void InitializeSounds()
     {
-        for (int i = 0; i < sounds.Length; i++)
+        for (int i = 0; i < soundsConfig.soundsSFX.Length; i++)
         {
-            GameObject soundGameObject = new GameObject("Sound" + i + " " + sounds[i].nameSound);
+            GameObject soundGameObject = new GameObject("Sound" + i + " " + soundsConfig.soundsSFX[i].nameSound);
             soundGameObject.transform.SetParent(this.transform);
-            sounds[i].SetSource(soundGameObject.AddComponent<AudioSource>());
+            soundsConfig.soundsSFX[i].SetSource(soundGameObject.AddComponent<AudioSource>());
+        }
+
+        for (int j = 0; j < soundsConfig.sounds.Length; j++)
+        {
+            GameObject soundThemeObject = new GameObject("Sound" + j + " " + soundsConfig.sounds[j].nameSound);
+            soundThemeObject.transform.SetParent(this.transform);
+            soundsConfig.sounds[j].SetSource(soundThemeObject.AddComponent<AudioSource>());
         }
     }
 
     public void PlaySound(string name)
     {
-        for (int i = 0; i < sounds.Length; i++)
+        for (int i = 0; i < soundsConfig.soundsSFX.Length; i++)
         {
-            if (sounds[i].nameSound == name)
+            if (soundsConfig.soundsSFX[i].nameSound == name)
             {
-                sounds[i].Play();
+                soundsConfig.soundsSFX[i].Play();
                 return;
             }
         }
 
-        //Debug.Log("Don't find sound");
+        for (int i = 0; i < soundsConfig.sounds.Length; i++)
+        {
+            if (soundsConfig.sounds[i].nameSound == name)
+            {
+                soundsConfig.sounds[i].Play();
+                return;
+            }
+        }
     }
 
     public void StopSound(string name)
     {
-        for (int i = 0; i < sounds.Length; i++)
+        for (int i = 0; i < soundsConfig.soundsSFX.Length; i++)
         {
-            if (sounds[i].nameSound == name)
+            if (soundsConfig.soundsSFX[i].nameSound == name)
             {
-                sounds[i].Stop();
+                soundsConfig.soundsSFX[i].Stop();
                 return;
             }
         }
-    }
-    private void ChangeMusicForCurrentScene()
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-        int sceneIndex = currentScene.buildIndex;
 
-        switch (sceneIndex)
+        for (int i = 0; i < soundsConfig.sounds.Length; i++)
         {
-            case 0:
-                ChangeMusic("MenuMusic");
-                break;
-            case 1:
-                ChangeMusic("ArenaMusic");
-                break;
-            default:
-                ChangeMusic("MenuMusic");
-                break;
+            if (soundsConfig.sounds[i].nameSound == name)
+            {
+                soundsConfig.sounds[i].Stop();
+                return;
+            }
         }
-    }
-
-    private void ChangeMusic(string newMusic)
-    {
-        StopSound(currentMusic);
-        currentMusic = newMusic;
-        PlaySound(newMusic);
     }
 }

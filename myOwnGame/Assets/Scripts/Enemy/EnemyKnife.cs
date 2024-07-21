@@ -9,12 +9,10 @@ public class EnemyKnife : MonoBehaviour
 
     protected Transform player;
     protected bool canAttack = true;
-    private Collider2D attackCollider;
 
     protected virtual void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        attackCollider = GetComponent<Collider2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -30,11 +28,10 @@ public class EnemyKnife : MonoBehaviour
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
-            playerHealth.DecreaseHealth(damageToPlayer);
+        
         }
         StartCoroutine(AttackCooldown());
     }
-
     protected virtual IEnumerator AttackCooldown()
     {
         canAttack = false;

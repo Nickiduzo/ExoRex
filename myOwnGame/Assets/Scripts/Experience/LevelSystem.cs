@@ -23,8 +23,14 @@ public class LevelSystem : MonoBehaviour
         UpdateLevelUI();
     }
 
+    private void OnEnable()
+    {
+        AudioManager.Instance.PlaySound("ArenaMusic");
+        AudioManager.Instance.StopSound("MenuMusic");
+    }
     private void OnDisable()
     {
+        AudioManager.Instance.StopSound("ArenaMusic");
         levelData.currentLevel = currentLevel;
         levelData.nextLevelXP = nextLevelXP;
         levelData.currentXP = currentXP;

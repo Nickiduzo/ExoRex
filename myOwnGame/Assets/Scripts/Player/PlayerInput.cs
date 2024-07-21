@@ -13,13 +13,11 @@ public class PlayerInput : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetButtonDown("Jump"))
             jumpAbility?.Jump();
-    }
 
-    private void FixedUpdate()
-    {
         movement?.Move(horizontal);
         spriteOrientation?.Flip(horizontal);
     }
+
 
     public GameObject FindObject(string name)
     {
@@ -30,5 +28,10 @@ public class PlayerInput : MonoBehaviour
             UnityEngine.Debug.Log($"{obj.name} - null");
         }
         return obj.transform.gameObject;
+    }
+
+    public void PlayFootStep()
+    {
+        AudioManager.Instance.PlaySound("PlayerStep");
     }
 }

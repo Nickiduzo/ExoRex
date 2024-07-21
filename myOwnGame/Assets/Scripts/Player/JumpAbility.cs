@@ -4,33 +4,20 @@ using UnityEngine;
 [RequireComponent(typeof(GroundCheck))]
 public class JumpAbility : MonoBehaviour
 {
-    public string jumpingAudio = "JumpAudio";
-    private AudioManager audioManager;
-
     [SerializeField] private Animator anime;
     [SerializeField] private float jumpForce = 7f;
     private Rigidbody2D rb;
     private GroundCheck groundCheck;
-    //private int currentJumpCount = 0;
 
     private void Awake()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         groundCheck = GetComponent<GroundCheck>();
     }
-    private void Start()
-    {
-        audioManager = AudioManager.Instance;
-    }
 
-    private void FixedUpdate()
+    private void Update()
     {
         anime.SetBool("Ground", groundCheck.IsGrounded);
-    }
-
-    public void MakeJumpSound()
-    {
-        audioManager?.PlaySound(jumpingAudio);
     }
 
     public void Jump()
@@ -52,7 +39,7 @@ public class JumpAbility : MonoBehaviour
     }
     private void ExecuteJumpFunctionality()
     {
-        MakeJumpSound();
+        AudioManager.Instance.PlaySound("PlayerJump");
         anime.SetBool("Ground", false);
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }

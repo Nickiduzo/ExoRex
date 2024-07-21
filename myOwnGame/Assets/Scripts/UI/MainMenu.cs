@@ -11,16 +11,11 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Token token;
     [SerializeField] private ArenaConfig arenaConfig;
 
-    private AudioManager audioManager;
-    private void Start()
+    private void OnEnable()
     {
-        audioManager = AudioManager.Instance;
-        if (audioManager == null)
-        {
-            Debug.Log("No audiomanager found!");
-        }
+        AudioManager.Instance.PlaySound("MenuMusic");
+        AudioManager.Instance.StopSound("ArenaMusic");
     }
-
     public void LaunchArena(int tokenAmount)
     {
         if (token.amount >= tokenAmount)
@@ -37,12 +32,11 @@ public class MainMenu : MonoBehaviour
 
     public void OnMouseClick()
     {
-        audioManager.PlaySound(nameClickSound);
+        AudioManager.Instance.PlaySound(nameClickSound);
     }
 
     public void OnMouseSelect()
     {
-        audioManager.PlaySound(nameSelectSound);
+        AudioManager.Instance.PlaySound(nameSelectSound);
     }
-
 }

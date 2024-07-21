@@ -162,4 +162,9 @@ public class Enemy : MonoBehaviour
 
         Gizmos.DrawWireCube(transform.position, boxSize);
     }
+
+    public void EnemyAttack()
+    {
+        AudioManager.Instance.PlaySound("ZombieAttack");
+    }
 }

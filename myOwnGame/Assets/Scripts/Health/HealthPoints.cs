@@ -64,4 +64,9 @@ public class HealthPoints : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void ZombieDamage()
+    {
+        AudioManager.Instance.PlaySound("ZombieDamage");
+    }
 }
