@@ -9,4 +9,7 @@ public class ArenaMode
     public float chaseSpeed;
     public float bossPatrolSpeed;
     public float bossChaseSpeed;
+
+    [HideInInspector]
+    public int highScore;
 }

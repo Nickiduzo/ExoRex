@@ -43,9 +43,9 @@ public class PointCounter : MonoBehaviour
     }
     public void SetHighScore()
     {
-        if (count > arenaConfig.highScore)
+        if (count > arenaConfig.currentMode.highScore)
         {
-            arenaConfig.highScore = count;
+            arenaConfig.currentMode.highScore = count;
         }
     }
 }

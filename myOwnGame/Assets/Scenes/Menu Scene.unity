@@ -1805,6 +1805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreTitle: {fileID: 122253640}
   arenaConfig: {fileID: 11400000, guid: f78c76890a933764aaec64dd57c2aabf, type: 2}
+  difficulty: 0
 --- !u!1 &138286593
 GameObject:
   m_ObjectHideFlags: 0
@@ -10619,6 +10620,7 @@ GameObject:
   - component: {fileID: 670323086}
   - component: {fileID: 670323088}
   - component: {fileID: 670323087}
+  - component: {fileID: 670323089}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -10742,6 +10744,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670323085}
   m_CullTransparentMesh: 1
+--- !u!114 &670323089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670323085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9001fe95bb3f4b64b8b53b3f2234f813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTitle: {fileID: 670323087}
+  arenaConfig: {fileID: 11400000, guid: f78c76890a933764aaec64dd57c2aabf, type: 2}
+  difficulty: 2
 --- !u!1 &671491688
 GameObject:
   m_ObjectHideFlags: 0
@@ -11596,6 +11613,7 @@ GameObject:
   - component: {fileID: 737398073}
   - component: {fileID: 737398075}
   - component: {fileID: 737398074}
+  - component: {fileID: 737398076}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -11719,6 +11737,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737398072}
   m_CullTransparentMesh: 1
+--- !u!114 &737398076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737398072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9001fe95bb3f4b64b8b53b3f2234f813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTitle: {fileID: 737398074}
+  arenaConfig: {fileID: 11400000, guid: f78c76890a933764aaec64dd57c2aabf, type: 2}
+  difficulty: 1
 --- !u!1 &737851569
 GameObject:
   m_ObjectHideFlags: 0
@@ -14572,7 +14605,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.7
+  m_fontSize: 33.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -25896,6 +25929,7 @@ GameObject:
   - component: {fileID: 1743470104}
   - component: {fileID: 1743470106}
   - component: {fileID: 1743470105}
+  - component: {fileID: 1743470107}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -26019,6 +26053,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743470103}
   m_CullTransparentMesh: 1
+--- !u!114 &1743470107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743470103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9001fe95bb3f4b64b8b53b3f2234f813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTitle: {fileID: 1743470105}
+  arenaConfig: {fileID: 11400000, guid: f78c76890a933764aaec64dd57c2aabf, type: 2}
+  difficulty: 0
 --- !u!1 &1747685671
 GameObject:
   m_ObjectHideFlags: 0
