@@ -28,7 +28,7 @@ public class EnemyKnife : MonoBehaviour
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
-        
+            playerHealth.DecreaseHealth(damageToPlayer);
         }
         StartCoroutine(AttackCooldown());
     }

@@ -10,6 +10,9 @@ public class AudioSettings : MonoBehaviour
     public Slider effectsVolumeSlider;
     public Toggle muteToggle;
 
+    public Sprite toggleOn;
+    public Sprite toggleOff;
+
     private void Start()
     {
         masterVolumeSlider.onValueChanged.AddListener(SetMasterVolume);
@@ -17,7 +20,6 @@ public class AudioSettings : MonoBehaviour
         effectsVolumeSlider.onValueChanged.AddListener(SetEffectsVolume);
         muteToggle.onValueChanged.AddListener(ToggleMute);
 
-        // Load saved settings
         LoadSettings();
     }
 
@@ -60,6 +62,14 @@ public class AudioSettings : MonoBehaviour
     {
         AudioListener.pause = isMuted;
         PlayerPrefs.SetInt("Mute", isMuted ? 1 : 0);
+        if (!isMuted)
+        {
+            muteToggle.image.sprite = toggleOn;
+        }
+        else
+        {
+            muteToggle.image.sprite = toggleOff;
+        }
     }
 
     private void LoadSettings()
