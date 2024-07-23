@@ -1,7 +1,7 @@
 public enum RecipeType
 {
     Armor,
-    Wheapon,
     Implant,
+    Wheapon,
     Color
 }

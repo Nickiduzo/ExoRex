@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a903e54e56dbcba4a8c2ffb0208ea3e1, type: 3}
-  m_Name: ArmorProtection
+  m_Name: Akay
   m_EditorClassIdentifier: 
-  recipeName: Armore-75
-  type: 0
-  characterLevel: 15
-  dropChance: 1.5
-  novaciteAmount: 1
+  recipeName: Akay-0475
+  type: 2
+  characterLevel: 75
+  dropChance: 0.3
+  novaciteAmount: 15
   nexitAmount: 2
-  quartexAmount: 5
-  imageSprite: {fileID: 21300000, guid: 35ef72a3cbcff9f459fb24f986fe1838, type: 3}
-  description: Create armor protection that increase your protection on 5%. Drop
-    from "DinoBoss" with 1.5% chance.
+  quartexAmount: 4
+  imageSprite: {fileID: 140900152, guid: 26921421a2c89a74b8bdf288e51882c7, type: 3}
+  description: Create "Akay-0475" gun, which have 32 shots, fast reloading. Kill
+    enemy, if shot in head. Increased damage on bosses. Drop chance 0.3 from RexBoss;
   isAvaible: 0
+  isCollected: 0

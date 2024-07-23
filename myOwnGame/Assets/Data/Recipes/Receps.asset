@@ -12,7 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7334914394f316c459edc94ee42aeda5, type: 3}
   m_Name: Receps
   m_EditorClassIdentifier: 
-  recipes:
-  - {fileID: 11400000, guid: 67b15c47c06100f48b193e45c93e82e5, type: 2}
-  - {fileID: 11400000, guid: eba732643720f5f41a9eb30ab221a8de, type: 2}
-  - {fileID: 11400000, guid: 596bc2026536c414a85009670aaecc47, type: 2}
+  recipes: []

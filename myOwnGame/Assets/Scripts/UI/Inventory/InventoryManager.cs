@@ -1,18 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    public List<Item> items = new List<Item>();
-    public Transform ItemContent;
-    public GameObject InventoryItem;
     public ItemsConfig itemsConfig;
     public RecepsManager recepsManager;
 
-    public GameObject[] loots;
+    public GameObject[] allReceps;
     #region Singleton
     public static InventoryManager Instance;
     private void Awake()
@@ -20,47 +15,14 @@ public class InventoryManager : MonoBehaviour
         Instance = this;
     }
     #endregion
-    public void AddItem(Item item)
-    {
-        bool itemExists = false;
-        foreach (var existingItem in items)
-        {
-            if (existingItem == item)
-            {
-                existingItem.amount++;
-                itemExists = true;
-                break;
-            }
-        }
-
-        if (!itemExists) items.Add(item);
-    }
 
     public void CollectRecep(Recipe recipe)
     {
-        recepsManager.recipes.Add(recipe);
-    }
-    public void RemoveItem(Item item)
-    {
-        items.Remove(item);
-    }
-    public void ListItems()
-    {
-        foreach (Transform item in ItemContent)
+        if (!recepsManager.recipes.Contains(recipe))
         {
-            Destroy(item.gameObject);
-        }
-     
-        foreach (var item in items)
-        {
-            GameObject material = Instantiate(InventoryItem, ItemContent);
-            var itemNameText = material.transform.Find("ItemName").GetComponent<TextMeshProUGUI>();
-            var itemIcon = material.transform.Find("ItemIcon").GetComponent<Image>();
-            var itemAmount = material.transform.Find("Amount").GetComponent<TextMeshProUGUI>();
-
-            itemNameText.text = item.itemName;
-            itemIcon.sprite = item.icon;
-            itemAmount.text = item.amount.ToString();
+            recepsManager.recipes.Add(recipe);
+            recipe.isAvaible = true;
+            recipe.isCollected = true;
         }
     }
 
@@ -125,10 +87,18 @@ public class InventoryManager : MonoBehaviour
         int titaniumAmount = Random.Range(itemsConfig.Titanium.minAmount, itemsConfig.Titanium.maxAmount);
         int ederiumAmount = Random.Range(itemsConfig.Ederium.minAmount, itemsConfig.Ederium.maxAmount);
 
-        float randomChance = Random.Range(0, 100f);
+        float randomChance = Random.Range(0f, 100.0f);
 
+        Debug.Log($"Drop chance: " + randomChance);
+        if (randomChance < 10)
+        {
+            DropRecipe(position, randomChance);
+            itemsConfig.Titanium.amount += 3;
+            itemsConfig.Ederium.amount += 25;
+        }
         if (randomChance <= 15)
         {
+            DropRecipe(position, randomChance);
             for (int i = 0; i < titaniumAmount; i++)
             {
                 itemsConfig.Titanium.amount++;
@@ -137,6 +107,7 @@ public class InventoryManager : MonoBehaviour
         }
         else if (randomChance > 15)
         {
+            DropRecipe(position, randomChance);
             for (int i = 0; i < ederiumAmount; i++)
             {
                 itemsConfig.Ederium.amount++;
@@ -153,5 +124,19 @@ public class InventoryManager : MonoBehaviour
     private void ThrowExotLoot(Vector3 position)
     {
 
+    }
+    private void DropRecipe(Vector3 position, float dropChance)
+    {
+        int recipeIndex = Random.Range(0, allReceps.Length);
+        GameObject recipe = Instantiate(allReceps[recipeIndex], position,Quaternion.identity);
+
+        //foreach (GameObject recep in allReceps)
+        //{
+        //    RecipePickup example = recep.GetComponent<RecipePickup>();
+        //    if (example.recipe.dropChance > dropChance) 
+        //    {
+        //        GameObject recipe = Instantiate(allReceps[recipeIndex], position,Quaternion.identity);
+        //    }
+        //}
     }
 }
