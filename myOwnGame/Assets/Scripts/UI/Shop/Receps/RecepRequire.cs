@@ -53,15 +53,18 @@ public class RecepRequire : MonoBehaviour
 
     private void InitializeComponents()
     {
-        currentRecipe = recepsManager.recipes[0];
-        UpdateBuyButtonState();
+        if (recepsManager.recipes.Count != 0)
+        {
+            currentRecipe = recepsManager.recipes[0];
+            UpdateBuyButtonState();
 
-        recipeName.text = currentRecipe.recipeName;
-        novaciteAmount.text = currentRecipe.novaciteAmount.ToString();
-        nexitAmount.text = currentRecipe.nexitAmount.ToString();
-        quartexAmount.text = currentRecipe.quartexAmount.ToString();
-        recepImage.sprite = currentRecipe.imageSprite;
-        recepDescription.text = currentRecipe.description;
+            recipeName.text = currentRecipe.recipeName;
+            novaciteAmount.text = currentRecipe.novaciteAmount.ToString();
+            nexitAmount.text = currentRecipe.nexitAmount.ToString();
+            quartexAmount.text = currentRecipe.quartexAmount.ToString();
+            recepImage.sprite = currentRecipe.imageSprite;
+            recepDescription.text = currentRecipe.description;
+        }
     }
 
     private void UpdateBuyButtonState()
