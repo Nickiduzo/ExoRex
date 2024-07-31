@@ -1598,7 +1598,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277275104}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
@@ -1615,7 +1615,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277275104}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -1676,6 +1676,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 485762109216321589, guid: 562cf692867116144808c1bec2c7de10, type: 3}
+      propertyPath: jumpEffect
+      value: 
+      objectReference: {fileID: 2280812486514757544, guid: 5fd004bbea5977c46824e3b5abea729c, type: 3}
+    - target: {fileID: 1635609006101044078, guid: 562cf692867116144808c1bec2c7de10, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -253844914, guid: 66bdf8195024864479b1d5e7c27ef60b, type: 3}
     - target: {fileID: 1635609006101044078, guid: 562cf692867116144808c1bec2c7de10, type: 3}
       propertyPath: m_SortingOrder
       value: 100
@@ -1728,6 +1736,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.0060916245
       objectReference: {fileID: 0}
+    - target: {fileID: 5882222118158148503, guid: 562cf692867116144808c1bec2c7de10, type: 3}
+      propertyPath: groundCollisionEffect
+      value: 
+      objectReference: {fileID: 7512175717311285909, guid: 5fd004bbea5977c46824e3b5abea729c, type: 3}
     - target: {fileID: 6851101074986047960, guid: 562cf692867116144808c1bec2c7de10, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1739,6 +1751,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1827993073558804923, guid: 562cf692867116144808c1bec2c7de10, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1760287519}
+    - targetCorrespondingSourceObject: {fileID: 1827993073558804923, guid: 562cf692867116144808c1bec2c7de10, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 296872241}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6851101074986047960, guid: 562cf692867116144808c1bec2c7de10, type: 3}
       insertIndex: -1
@@ -1784,6 +1799,105 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSlider: {fileID: 1853125512}
+--- !u!1 &296872240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 296872241}
+  - component: {fileID: 296872242}
+  - component: {fileID: 296872243}
+  m_Layer: 0
+  m_Name: arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &296872241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296872240}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: 0.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 281180334}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &296872242
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296872240}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 150
+  m_Sprite: {fileID: 21300000, guid: 51b0264f63ce1554e8f64015bed9fadf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.17, y: 0.11}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &296872243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296872240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b335a6c1b006e3e45bcfce667b9fc227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationOffset: 0
+  mainCamera: {fileID: 277275107}
 --- !u!1 &400647108
 GameObject:
   m_ObjectHideFlags: 0
@@ -7590,7 +7704,7 @@ GameObject:
   - component: {fileID: 1203377019}
   - component: {fileID: 1203377018}
   - component: {fileID: 1203377020}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21906,7 +22020,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1760287519
 Transform:
   m_ObjectHideFlags: 0
@@ -21916,7 +22030,7 @@ Transform:
   m_GameObject: {fileID: 1760287518}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.102, y: -0.04, z: 0}
+  m_LocalPosition: {x: 0.102, y: -0.0564, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

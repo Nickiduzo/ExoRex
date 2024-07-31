@@ -11,20 +11,12 @@ public class Shot : MonoBehaviour
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
         rigidBody2D.velocity = direction * speed;
-        Destroy(gameObject,1.2f);
+        Destroy(gameObject, 1.2f);
     }
+
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.gameObject.CompareTag("Enemy"))
-        {
-            HealthPoints health = hitInfo.gameObject.GetComponent<HealthPoints>();
-            if (health != null)
-            {
-                health.TakeDamage(damage);
-            }
-            Destroy(gameObject);
-        }
-        else if (hitInfo.gameObject.CompareTag("RexEnemy"))
+        if (hitInfo.gameObject.CompareTag("Enemy") || hitInfo.gameObject.CompareTag("RexEnemy"))
         {
             HealthPoints health = hitInfo.gameObject.GetComponent<HealthPoints>();
             if (health != null)
@@ -35,15 +27,8 @@ public class Shot : MonoBehaviour
         }
     }
 
-    public void SetDirection(float horizontalDirection)
+    public void SetDirection(Vector2 newDirection)
     {
-        if(horizontalDirection < 0)
-        {
-            direction = Vector2.left;
-        }
-        else
-        {
-            direction = Vector2.right;
-        }
+        direction = newDirection.normalized;
     }
 }
