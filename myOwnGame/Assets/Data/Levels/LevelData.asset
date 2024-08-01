@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df9357a0070cdb4c8a5b5a14fdd4050, type: 3}
   m_Name: LevelData
   m_EditorClassIdentifier: 
-  maxLevel: 100
+  maxLevel: 25
   initialXP: 250
   progressionFactor: 3
-  currentLevel: 16
+  currentLevel: 0
   currentXP: 0
   nextLevelXP: 1195742250

@@ -47,7 +47,8 @@ public class RecepRequire : MonoBehaviour
         novaciteAmount.text = recipe.novaciteAmount.ToString();
         nexitAmount.text = recipe.nexitAmount.ToString();
         quartexAmount.text = recipe.quartexAmount.ToString();
-        recepImage.sprite = recipe.imageSprite; 
+        recepImage.sprite = recipe.imageSprite;
+        recepImage.preserveAspect = true;
         recepDescription.text = recipe.description; 
     }
 
@@ -63,6 +64,7 @@ public class RecepRequire : MonoBehaviour
             nexitAmount.text = currentRecipe.nexitAmount.ToString();
             quartexAmount.text = currentRecipe.quartexAmount.ToString();
             recepImage.sprite = currentRecipe.imageSprite;
+            recepImage.preserveAspect = true;
             recepDescription.text = currentRecipe.description;
         }
     }
@@ -73,20 +75,20 @@ public class RecepRequire : MonoBehaviour
         {
             if (currentRecipe.isAvaible)
             {
-                buyButton.image.color = Color.white;
+                //buyButton.image.color = Color.white;
                 buyButton.interactable = true;
                 buttonLabel.text = "Buy";
             }
             else
             {
-                buyButton.image.color = Color.red;
+                //buyButton.image.color = Color.red;
                 buyButton.interactable = false;
                 buttonLabel.text = $"Requires Level {currentRecipe.characterLevel}";
             }
         }
         else
         {
-            buyButton.image.color = Color.gray;
+            //buyButton.image.color = Color.gray;
             buyButton.interactable = false;
             buttonLabel.text = $"Requires Level {currentRecipe.characterLevel}";
         }

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a903e54e56dbcba4a8c2ffb0208ea3e1, type: 3}
-  m_Name: BitBaker
+  m_Name: ExoArmor
   m_EditorClassIdentifier: 
-  recipeName: Armore-25
+  recipeName: RArmor-01
   type: 0
   characterLevel: 8
   dropChance: 25
   novaciteAmount: 0
   nexitAmount: 3
   quartexAmount: 2
-  imageSprite: {fileID: 21300000, guid: 35ef72a3cbcff9f459fb24f986fe1838, type: 3}
+  imageSprite: {fileID: -1534141016, guid: 5e62298ddd95e6048b404e605b4c8eed, type: 3}
   description: Create armor, which will protect you on 25% during 5 seconds
   isAvaible: 0
   isCollected: 0

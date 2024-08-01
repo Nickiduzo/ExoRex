@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a903e54e56dbcba4a8c2ffb0208ea3e1, type: 3}
-  m_Name: Pankeker
+  m_Name: DamageImplant
   m_EditorClassIdentifier: 
-  recipeName: Pankeker
-  type: 0
-  characterLevel: 37
-  dropChance: 2
-  novaciteAmount: 5
-  nexitAmount: 1
-  quartexAmount: 4
-  imageSprite: {fileID: 21300000, guid: 35ef72a3cbcff9f459fb24f986fe1838, type: 3}
-  description: Create armor protection which increase your hp on 35% and armor on
-    35%. Drop chance 2 from "DinoBoss"
+  recipeName: Damageplan
+  type: 1
+  characterLevel: 54
+  dropChance: 0.8
+  novaciteAmount: 10
+  nexitAmount: 5
+  quartexAmount: 3
+  imageSprite: {fileID: 209305407, guid: 5e62298ddd95e6048b404e605b4c8eed, type: 3}
+  description: Create implant that Increase your any shot damage on 25%. Decrease
+    hp on 15%. Drop from DinoBoss with 0.8% chance.
   isAvaible: 0
   isCollected: 0

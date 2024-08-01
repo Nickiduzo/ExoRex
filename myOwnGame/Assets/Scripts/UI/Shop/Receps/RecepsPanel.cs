@@ -82,14 +82,6 @@ public class RecepsPanel : MonoBehaviour
         {
             recipeButton.SetRecipeName(recipe);
             Button button = newButton.GetComponent<Button>();
-            if (levelData.currentLevel < recipe.characterLevel)
-            {
-                button.image.color = Color.red;
-            }
-            else
-            {
-                button.image.color = Color.white;
-            }
             button.onClick.AddListener(recipeButton.OnButtonClick);
             recepsList.Add(newButton);
             AddToCategoryList(recipe, newButton);

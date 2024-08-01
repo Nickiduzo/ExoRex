@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a903e54e56dbcba4a8c2ffb0208ea3e1, type: 3}
   m_Name: Shotgun
   m_EditorClassIdentifier: 
-  recipeName: ShockPock
+  recipeName: Akrasti02
   type: 2
-  characterLevel: 40
-  dropChance: 13
-  novaciteAmount: 1
-  nexitAmount: 2
-  quartexAmount: 1
-  imageSprite: {fileID: 140900152, guid: 26921421a2c89a74b8bdf288e51882c7, type: 3}
-  description: Create "ShockPock" with 2 shots. Fast reloading. Very high damage
-    at close range. Drop chance 13% from RexBoss.
+  characterLevel: 5
+  dropChance: 12
+  novaciteAmount: 0
+  nexitAmount: 1
+  quartexAmount: 3
+  imageSprite: {fileID: 173417813, guid: 8ecaa6a0333b787428f42e580c9a316b, type: 3}
+  description: Create "Boer-r2D", which have 3 shots in magazine. Fast reloading.
+    Increased damage on boss. Low damage on enemy. Drop chance 12% from DinoBoss.
   isAvaible: 0
   isCollected: 0
