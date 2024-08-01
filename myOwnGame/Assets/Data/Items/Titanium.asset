@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   itemName: Titanium
-  amount: 0
+  amount: 123
   icon: {fileID: -510608210, guid: b1c75e204e4efa54da86479a379f2752, type: 3}
   minAmount: 0
   maxAmount: 1

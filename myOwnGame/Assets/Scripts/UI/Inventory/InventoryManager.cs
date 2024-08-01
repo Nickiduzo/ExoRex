@@ -18,11 +18,9 @@ public class InventoryManager : MonoBehaviour
 
     public void CollectRecep(Recipe recipe)
     {
-        if (!recepsManager.recipes.Contains(recipe))
+        if (!recepsManager.allGameRecipes.Contains(recipe))
         {
-            recepsManager.recipes.Add(recipe);
-            recipe.isAvaible = true;
-            recipe.isCollected = true;
+            recepsManager.recipesForCraft.Add(recipe);
         }
     }
 

@@ -12,7 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7334914394f316c459edc94ee42aeda5, type: 3}
   m_Name: Receps
   m_EditorClassIdentifier: 
-  recipes:
+  allGameRecipes:
   - {fileID: 11400000, guid: 67b15c47c06100f48b193e45c93e82e5, type: 2}
+  - {fileID: 11400000, guid: 0192cfdf6f18af349ad4f26709af80d6, type: 2}
+  - {fileID: 11400000, guid: 13f4cf218ac32184d98f525de7ce96c1, type: 2}
   - {fileID: 11400000, guid: 8ed28991c2e046e4bb6e49d66d195686, type: 2}
+  - {fileID: 11400000, guid: eba732643720f5f41a9eb30ab221a8de, type: 2}
+  - {fileID: 11400000, guid: 0830b53187200984c81bcbe3c5f3fcf0, type: 2}
+  - {fileID: 11400000, guid: 6e7b25ad87ce4cb49909cdc284e302c2, type: 2}
   - {fileID: 11400000, guid: 596bc2026536c414a85009670aaecc47, type: 2}
+  - {fileID: 11400000, guid: 6c6050434b8d44047be15b20194b7a0f, type: 2}
+  recipesForShop:
+  - {fileID: 11400000, guid: 6e7b25ad87ce4cb49909cdc284e302c2, type: 2}
+  - {fileID: 11400000, guid: 6c6050434b8d44047be15b20194b7a0f, type: 2}
+  - {fileID: 11400000, guid: 596bc2026536c414a85009670aaecc47, type: 2}
+  - {fileID: 11400000, guid: eba732643720f5f41a9eb30ab221a8de, type: 2}
+  - {fileID: 11400000, guid: 8ed28991c2e046e4bb6e49d66d195686, type: 2}
+  - {fileID: 11400000, guid: 0830b53187200984c81bcbe3c5f3fcf0, type: 2}
+  - {fileID: 11400000, guid: 67b15c47c06100f48b193e45c93e82e5, type: 2}
+  - {fileID: 11400000, guid: 0192cfdf6f18af349ad4f26709af80d6, type: 2}
+  recipesForCraft: []

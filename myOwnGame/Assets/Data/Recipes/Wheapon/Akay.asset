@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: Drabblobr
   type: 2
-  characterLevel: 75
+  characterLevel: 7
   dropChance: 0.3
   novaciteAmount: 15
   nexitAmount: 2
@@ -22,5 +22,3 @@ MonoBehaviour:
   imageSprite: {fileID: 2027915916, guid: 8ecaa6a0333b787428f42e580c9a316b, type: 3}
   description: Create "Akay-0475" gun, which have 32 shots, fast reloading. Kill
     enemy, if shot in head. Increased damage on bosses. Drop chance 0.3 from RexBoss;
-  isAvaible: 0
-  isCollected: 0

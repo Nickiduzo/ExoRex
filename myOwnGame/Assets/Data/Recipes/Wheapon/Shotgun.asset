@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: Akrasti02
   type: 2
-  characterLevel: 5
+  characterLevel: 12
   dropChance: 12
   novaciteAmount: 0
   nexitAmount: 1
@@ -22,5 +22,3 @@ MonoBehaviour:
   imageSprite: {fileID: 173417813, guid: 8ecaa6a0333b787428f42e580c9a316b, type: 3}
   description: Create "Boer-r2D", which have 3 shots in magazine. Fast reloading.
     Increased damage on boss. Low damage on enemy. Drop chance 12% from DinoBoss.
-  isAvaible: 0
-  isCollected: 0

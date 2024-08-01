@@ -15,6 +15,6 @@ MonoBehaviour:
   maxLevel: 25
   initialXP: 250
   progressionFactor: 3
-  currentLevel: 0
+  currentLevel: 20
   currentXP: 0
   nextLevelXP: 1195742250

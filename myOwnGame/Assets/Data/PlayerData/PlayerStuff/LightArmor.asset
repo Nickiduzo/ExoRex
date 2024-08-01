@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b194a3d307532d48b829534d5218e50, type: 3}
+  m_Name: LightArmor
+  m_EditorClassIdentifier: 
+  armorName: RexArmor
+  armorStat: 100
+  armorImage: {fileID: -1023138358, guid: 5e62298ddd95e6048b404e605b4c8eed, type: 3}

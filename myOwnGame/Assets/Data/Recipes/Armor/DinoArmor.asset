@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: RArmor-03
   type: 0
-  characterLevel: 15
+  characterLevel: 2
   dropChance: 1.5
   novaciteAmount: 1
   nexitAmount: 2
@@ -22,5 +22,3 @@ MonoBehaviour:
   imageSprite: {fileID: -1023138358, guid: 5e62298ddd95e6048b404e605b4c8eed, type: 3}
   description: Create armor protection that increase your protection on 5%. Drop
     from "DinoBoss" with 1.5% chance.
-  isAvaible: 0
-  isCollected: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: Speedoplan
   type: 1
-  characterLevel: 25
+  characterLevel: 3
   dropChance: 0.5
   novaciteAmount: 2
   nexitAmount: 1
@@ -22,5 +22,3 @@ MonoBehaviour:
   imageSprite: {fileID: -1272637098, guid: 5e62298ddd95e6048b404e605b4c8eed, type: 3}
   description: Create implant that Increase your speed moving on 10%. Decrease damage
     on 3%. Drop from DinoBoss with 0.5% chance.
-  isAvaible: 0
-  isCollected: 0

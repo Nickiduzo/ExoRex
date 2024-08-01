@@ -26,7 +26,7 @@ public class RecepsPanel : MonoBehaviour
     public static Action<Recipe> ActionRecepRequire;
     private void Start()
     {
-        InitializeButtons(recepsManager.recipes);
+        InitializeButtons(recepsManager.allGameRecipes);
         InitializeCategoryDict();
         searchInputField.onValueChanged.AddListener(OnSearchInputChanged);
     }
@@ -40,7 +40,7 @@ public class RecepsPanel : MonoBehaviour
     {
         AudioManager.Instance.PlaySound("SelectButton");
     }
- 
+
     public void ShowReceps(string which)
     {
         if (categoryRecepsList.ContainsKey(which))

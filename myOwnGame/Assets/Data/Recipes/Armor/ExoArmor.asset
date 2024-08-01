@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: RArmor-01
   type: 0
-  characterLevel: 8
+  characterLevel: 3
   dropChance: 25
   novaciteAmount: 0
   nexitAmount: 3
   quartexAmount: 2
   imageSprite: {fileID: -1534141016, guid: 5e62298ddd95e6048b404e605b4c8eed, type: 3}
   description: Create armor, which will protect you on 25% during 5 seconds
-  isAvaible: 0
-  isCollected: 0

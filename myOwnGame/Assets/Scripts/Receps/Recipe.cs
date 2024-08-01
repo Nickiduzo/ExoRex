@@ -14,10 +14,4 @@ public class Recipe : ScriptableObject
 
     public Sprite imageSprite; // image of item
     public string description;
-
-    [HideInInspector]
-    public bool isAvaible = false;
-
-    [HideInInspector]
-    public bool isCollected = false;
 }

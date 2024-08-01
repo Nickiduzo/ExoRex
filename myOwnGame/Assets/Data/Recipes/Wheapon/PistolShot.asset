@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: Crackenri
   type: 2
-  characterLevel: 85
+  characterLevel: 5
   dropChance: 0.1
   novaciteAmount: 4
   nexitAmount: 6
@@ -22,5 +22,3 @@ MonoBehaviour:
   imageSprite: {fileID: 953671896, guid: 8ecaa6a0333b787428f42e580c9a316b, type: 3}
   description: Create "Lazor". Lazor can hit by line on 7.5 metres. One laser tick
     equivalent 7 hp. Drop chance 0.1 from ExoBoss.
-  isAvaible: 0
-  isCollected: 0

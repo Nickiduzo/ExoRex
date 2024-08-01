@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   itemName: Nexit
-  amount: 0
+  amount: 48
   icon: {fileID: 1584650161, guid: 7701bc62e9c6b564785e4e980777435d, type: 3}
   minAmount: 0
   maxAmount: 0

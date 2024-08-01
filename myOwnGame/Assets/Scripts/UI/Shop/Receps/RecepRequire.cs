@@ -16,6 +16,7 @@ public class RecepRequire : MonoBehaviour
     [SerializeField] private Image recepImage;
 
     [SerializeField] private RecepsManager recepsManager;
+    [SerializeField] private ItemsConfig materials;
 
     [Header("Buy/Sell")]
     [SerializeField] private Button buyButton;
@@ -38,6 +39,37 @@ public class RecepRequire : MonoBehaviour
         RecepsPanel.ActionRecepRequire -= ShowRecepInfo;
     }
 
+    public void BuyRecipe()
+    {
+        if (IsAvaible() && !recepsManager.recipesForShop.Contains(currentRecipe))
+        {
+            DecreaseMaterials();
+            recepsManager.recipesForShop.Add(currentRecipe);
+        }
+    }
+
+    public void CreateRecipeItem()
+    {
+        if (IsAvaible() && !recepsManager.recipesForCraft.Contains(currentRecipe)) 
+        {
+            DecreaseMaterials();
+            recepsManager.recipesForCraft.Add(currentRecipe);
+        }
+    }
+    
+    private void DecreaseMaterials()
+    {
+        materials.Novacite.amount -= currentRecipe.novaciteAmount;
+        materials.Nexit.amount -= currentRecipe.nexitAmount;
+        materials.Quartex.amount -= currentRecipe.quartexAmount;
+    }
+    private bool IsAvaible()
+    {
+        return (playerLevelData.currentLevel >= currentRecipe.characterLevel &&
+            materials.Novacite.amount >= currentRecipe.novaciteAmount &&
+            materials.Nexit.amount >= currentRecipe.nexitAmount &&
+            materials.Quartex.amount >= currentRecipe.quartexAmount);
+    }
     private void ShowRecepInfo(Recipe recipe)
     {
         currentRecipe = recipe;
@@ -54,9 +86,9 @@ public class RecepRequire : MonoBehaviour
 
     private void InitializeComponents()
     {
-        if (recepsManager.recipes.Count != 0)
+        if (recepsManager.allGameRecipes.Count != 0)
         {
-            currentRecipe = recepsManager.recipes[0];
+            currentRecipe = recepsManager.allGameRecipes[0];
             UpdateBuyButtonState();
 
             recipeName.text = currentRecipe.recipeName;
@@ -73,18 +105,13 @@ public class RecepRequire : MonoBehaviour
     {
         if (playerLevelData.currentLevel >= currentRecipe.characterLevel)
         {
-            if (currentRecipe.isAvaible)
+            if (!NotEnoughMaterials())
             {
-                //buyButton.image.color = Color.white;
-                buyButton.interactable = true;
-                buttonLabel.text = "Buy";
-            }
-            else
-            {
-                //buyButton.image.color = Color.red;
                 buyButton.interactable = false;
-                buttonLabel.text = $"Requires Level {currentRecipe.characterLevel}";
+                buttonLabel.text = $"Not enough materials";
             }
+            buyButton.interactable = true;
+            buttonLabel.text = "Buy";
         }
         else
         {
@@ -92,5 +119,12 @@ public class RecepRequire : MonoBehaviour
             buyButton.interactable = false;
             buttonLabel.text = $"Requires Level {currentRecipe.characterLevel}";
         }
+    }
+
+    private bool NotEnoughMaterials()
+    {
+        return materials.Novacite.amount >= currentRecipe.novaciteAmount &&
+               materials.Nexit.amount >= currentRecipe.nexitAmount &&
+               materials.Quartex.amount >= currentRecipe.quartexAmount;
     }
 }
