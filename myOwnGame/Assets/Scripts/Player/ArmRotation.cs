@@ -4,17 +4,26 @@ public class ArmRotation : MonoBehaviour
 {
     [SerializeField] private int rotationOffset = 0;
     [SerializeField] private Camera mainCamera;
+    [SerializeField] private Transform characterTransform;
 
     private void Update()
     {
-        // Проверка на наличие основной камеры
         if (mainCamera != null)
         {
             Vector3 difference = mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             difference.Normalize();
 
             float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0f, 0f, rotZ + rotationOffset);
+        
+            if (characterTransform.localScale.x < 0)
+            {
+                rotZ = 180 - rotZ;
+                transform.rotation = Quaternion.Euler(0f, 0f, -rotZ + rotationOffset);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0f, 0f, rotZ + rotationOffset);
+            }
         }
         else
         {

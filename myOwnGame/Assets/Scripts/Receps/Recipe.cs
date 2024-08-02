@@ -14,4 +14,9 @@ public class Recipe : ScriptableObject
 
     public Sprite imageSprite; // image of item
     public string description;
+
+    public string GetFormatedDescription()
+    {
+        return TextFormater.FormatDescription(description);
+    }
 }

@@ -6,6 +6,8 @@ public class WheaponLogic : MonoBehaviour
     [SerializeField] private GameObject shot;
     [SerializeField] private Camera mainCamera;
 
+    [SerializeField] private Animator animator;
+
     private float timerToShot;
 
     private void Start()
@@ -19,6 +21,7 @@ public class WheaponLogic : MonoBehaviour
 
         if (Input.GetMouseButton(0) && timerToShot <= 0)
         {
+            animator.SetTrigger("isShot");
             AudioManager.Instance.PlaySound("PistolShot");
             Vector3 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             Vector3 direction = (mousePosition - shotPos.position).normalized;

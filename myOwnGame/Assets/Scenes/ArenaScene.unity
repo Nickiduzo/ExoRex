@@ -1787,6 +1787,7 @@ MonoBehaviour:
   shotPos: {fileID: 1760287519}
   shot: {fileID: 7209862453921559911, guid: e71caa482b689804ea9260f1b600cfc5, type: 3}
   mainCamera: {fileID: 277275107}
+  animator: {fileID: 281180347}
 --- !u!114 &281180346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1800,6 +1801,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSlider: {fileID: 1853125512}
+--- !u!95 &281180347 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4868582657906844393, guid: 562cf692867116144808c1bec2c7de10, type: 3}
+  m_PrefabInstance: {fileID: 281180322}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &296872240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,6 +1905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationOffset: 0
   mainCamera: {fileID: 277275107}
+  characterTransform: {fileID: 281180334}
 --- !u!1 &400647108
 GameObject:
   m_ObjectHideFlags: 0

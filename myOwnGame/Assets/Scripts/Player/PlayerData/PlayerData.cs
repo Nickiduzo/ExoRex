@@ -1,10 +1,13 @@
-using System.Collections.Generic;
 using UnityEngine;
-
 
 [CreateAssetMenu(fileName ="PlayerData", menuName ="PlayerData/Player")]
 public class PlayerData : ScriptableObject
 {
+    public string nickname;
+    public string password;
+
+    public int currentLevel;
+
     public int playerHP;
     public int playerArmor;
 

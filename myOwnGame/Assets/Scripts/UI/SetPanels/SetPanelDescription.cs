@@ -11,7 +11,7 @@ public class SetPanelDescription : MonoBehaviour
     public void UpdateDescription(string name, string desc, Sprite image)
     {
         stuffName.text = name;
-        description.text = desc;
+        description.text = TextFormater.FormatDescription(desc);
         stuffPicture.sprite = image;
         stuffPicture.preserveAspect = true;
     }

@@ -81,7 +81,7 @@ public class RecepRequire : MonoBehaviour
         quartexAmount.text = recipe.quartexAmount.ToString();
         recepImage.sprite = recipe.imageSprite;
         recepImage.preserveAspect = true;
-        recepDescription.text = recipe.description; 
+        recepDescription.text = recipe.GetFormatedDescription(); 
     }
 
     private void InitializeComponents()
@@ -97,7 +97,7 @@ public class RecepRequire : MonoBehaviour
             quartexAmount.text = currentRecipe.quartexAmount.ToString();
             recepImage.sprite = currentRecipe.imageSprite;
             recepImage.preserveAspect = true;
-            recepDescription.text = currentRecipe.description;
+            recepDescription.text = currentRecipe.GetFormatedDescription();
         }
     }
 

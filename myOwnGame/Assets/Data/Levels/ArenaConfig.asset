@@ -19,6 +19,7 @@ MonoBehaviour:
     chaseSpeed: 1
     bossPatrolSpeed: 1
     bossChaseSpeed: 1.2
+    highScore: 2
   MediumMode:
     startDelay: 2.8
     spawnDelay: 2.4
@@ -26,6 +27,7 @@ MonoBehaviour:
     chaseSpeed: 1.4
     bossPatrolSpeed: 1.2
     bossChaseSpeed: 1.4
+    highScore: 0
   HardMode:
     startDelay: 2
     spawnDelay: 1.5
@@ -33,12 +35,13 @@ MonoBehaviour:
     chaseSpeed: 2
     bossPatrolSpeed: 1.4
     bossChaseSpeed: 1.6
+    highScore: 0
   currentDifficulty: 0
   currentMode:
-    startDelay: 2
-    spawnDelay: 1.5
-    patrolSpeed: 1.6
-    chaseSpeed: 2
-    bossPatrolSpeed: 1.4
-    bossChaseSpeed: 1.6
-  highScore: 20
+    startDelay: 3
+    spawnDelay: 2.8
+    patrolSpeed: 0.8
+    chaseSpeed: 1
+    bossPatrolSpeed: 1
+    bossChaseSpeed: 1.2
+    highScore: 65
