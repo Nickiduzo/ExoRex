@@ -7,4 +7,6 @@ public class Implant : ScriptableObject
     public string implantName;
     public int implantStat;
 
+    public Sprite implantImage;
+    public string description;
 }

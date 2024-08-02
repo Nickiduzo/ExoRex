@@ -215,7 +215,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 12
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 6525574560819717227}
   - component: {fileID: 6658738550067519986}
   m_Layer: 5
-  m_Name: ArmorImage
+  m_Name: Picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

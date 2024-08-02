@@ -8,4 +8,5 @@ public class Armor : ScriptableObject
     public int armorStat;
 
     public Sprite armorImage;
+    public string description;
 }

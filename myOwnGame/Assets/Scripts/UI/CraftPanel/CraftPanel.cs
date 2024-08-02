@@ -1,5 +1,5 @@
+using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +19,7 @@ public class CraftPanel : MonoBehaviour
 
     private Dictionary<string, List<GameObject>> categoryRecepsList;
 
+    public static Action<Stuff> ActionRecipeRequire;
     private void Awake()
     {
         InitializeButtons(recepsManager.recipesForCraft);

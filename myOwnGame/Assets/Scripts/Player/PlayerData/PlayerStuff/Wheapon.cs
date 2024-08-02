@@ -6,4 +6,7 @@ public class Wheapon : ScriptableObject
 {
     public string wheaponName;
     public int damage;
+
+    public Sprite wheaponImage;
+    public string description;
 }

@@ -13,5 +13,7 @@ public class PlayerData : ScriptableObject
 
     public float playerJumpForce;
 
-    //public Dictionary<string, Perk> characterPerks;
+    public Armor currentArmor;
+    public Implant currentImplant;
+    public Wheapon currentWheapon;
 }

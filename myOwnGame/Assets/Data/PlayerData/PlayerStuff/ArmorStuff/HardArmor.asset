@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b194a3d307532d48b829534d5218e50, type: 3}
-  m_Name: MediumArmor
+  m_Name: HardArmor
   m_EditorClassIdentifier: 
-  armorName: DinoArmor
-  armorStat: 250
-  armorImage: {fileID: -219739445, guid: 5e62298ddd95e6048b404e605b4c8eed, type: 3}
+  armorName: ExoArmor
+  armorStat: 500
+  armorImage: {fileID: -1534141016, guid: 5e62298ddd95e6048b404e605b4c8eed, type: 3}
+  description: Create armor, which will protect you on 25% during 5 seconds

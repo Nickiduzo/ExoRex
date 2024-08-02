@@ -15,3 +15,5 @@ MonoBehaviour:
   armorName: RexArmor
   armorStat: 100
   armorImage: {fileID: -1023138358, guid: 5e62298ddd95e6048b404e605b4c8eed, type: 3}
+  description: Create armor protection that increase your protection on 5%. Drop
+    from "DinoBoss" with 1.5% chance.
