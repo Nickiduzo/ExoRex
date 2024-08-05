@@ -42,6 +42,7 @@ public class LevelSystem : MonoBehaviour
         {
             currentXP -= nextLevelXP;
             currentLevel++;
+            levelData.LevelUp();
             nextLevelXP = CalculateNextLevelXP(currentLevel);
         }
         UpdateLevelUI();

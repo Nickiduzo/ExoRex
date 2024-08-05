@@ -32,43 +32,44 @@ public class UserPanel : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.B))
         {
-            unActivePanel = true;
-            onShowHUD.Invoke();
-            DefaultSpriteButton();
-            ChangeButtonSprite(0);
-            SwitchPanel("Inventory");
+            ActivatePanel(0, "Inventory");
         }
         else if (Input.GetKeyDown(KeyCode.U))
         {
-            unActivePanel = true;
-            onShowHUD.Invoke();
-            DefaultSpriteButton();
-            ChangeButtonSprite(1);
-            SwitchPanel("Mineral");
+            ActivatePanel(1, "Mineral");
         }
         else if (Input.GetKeyDown(KeyCode.I))
         {
-            unActivePanel = true;
-            onShowHUD.Invoke();
-            DefaultSpriteButton();
-            ChangeButtonSprite(2);
-            SwitchPanel("Tool");
+            ActivatePanel(2, "Tool");
         }
         else if (Input.GetKeyDown(KeyCode.O))
         {
-            unActivePanel = true;
-            onShowHUD.Invoke();
-            DefaultSpriteButton();
-            ChangeButtonSprite(3);
-            SwitchPanel("Implant");
+            ActivatePanel(3, "Implant");
         }
-        else if(Input.GetKeyDown(KeyCode.Escape))
+        else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            userHud.SetActive(false);
-            unActivePanel = false;
-            onHideHUD.Invoke();
+            ClosePanel();
         }
     }
+
+    private void ActivatePanel(int buttonIndex, string panelName)
+    {
+        unActivePanel = true;
+        onShowHUD.Invoke();
+        DefaultSpriteButton();
+        ChangeButtonSprite(buttonIndex);
+        SwitchPanel(panelName);
+        Time.timeScale = 0; // Останавливаем игру
+    }
+
+    private void ClosePanel()
+    {
+        userHud.SetActive(false);
+        unActivePanel = false;
+        onHideHUD.Invoke();
+        Time.timeScale = 1; // Возобновляем игру
+    }
+
     public void ChangeButtonSprite(int buttonIndex)
     {
         DefaultSpriteButton();
@@ -87,7 +88,7 @@ public class UserPanel : MonoBehaviour
     }
     private void DefaultSpriteButton()
     {
-        for(int i = 0; i < userButtons.Length;i++)
+        for (int i = 0; i < userButtons.Length; i++)
             userButtons[i].image.sprite = defaultSpriteButtons[i];
     }
 

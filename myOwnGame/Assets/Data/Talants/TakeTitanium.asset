@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df9357a0070cdb4c8a5b5a14fdd4050, type: 3}
-  m_Name: LevelData
+  m_Script: {fileID: 11500000, guid: dac1c12ce8d82764dace40403ab21910, type: 3}
+  m_Name: TakeTitanium
   m_EditorClassIdentifier: 
-  maxLevel: 25
-  initialXP: 250
-  progressionFactor: 3
-  currentLevel: 3
-  currentXP: 150
-  nextLevelXP: 2250
-  avaiblePoints: 0
+  talentName: Take Titanium
+  description: Smooth demonstration of collected items
+  requiredLevel: 25
+  pointsRequired: 5

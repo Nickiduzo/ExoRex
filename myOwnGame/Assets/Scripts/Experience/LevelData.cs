@@ -7,8 +7,14 @@ public class LevelData : ScriptableObject
     public int initialXP = 250;
     public float progressionFactor = 2.0f; // Фактор увеличения необходимых очков опыта
 
-
     public int currentLevel;
-    [HideInInspector] public int currentXP;
-    [HideInInspector] public int nextLevelXP;
+    public int currentXP;
+    public int nextLevelXP;
+
+    public int avaiblePoints;
+
+    public void LevelUp()
+    {
+        avaiblePoints++;
+    }
 }

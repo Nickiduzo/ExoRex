@@ -5,7 +5,7 @@ public class Shot : MonoBehaviour
     [SerializeField] private Rigidbody2D rigidBody2D;
     private int damage = 40;
     private float speed = 10f;
-    private Vector2 direction = Vector2.right;
+    private Vector2 direction;
 
     private void Start()
     {
@@ -30,5 +30,8 @@ public class Shot : MonoBehaviour
     public void SetDirection(Vector2 newDirection)
     {
         direction = newDirection.normalized;
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 }

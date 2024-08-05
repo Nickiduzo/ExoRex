@@ -42096,7 +42096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ExoRex.0.4
+  m_text: ExoRex.0.5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7320b144772118f4eaba8569223bd309, type: 2}
   m_sharedMaterial: {fileID: -8222786410267702194, guid: 7320b144772118f4eaba8569223bd309, type: 2}
